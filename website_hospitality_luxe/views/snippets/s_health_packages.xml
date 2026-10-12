@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<template id="s_health_packages" name="Preventive Health Packages">
+    <section class="s_health_packages py-5" style="background-color: #F4F9F9;" data-snippet="s_health_packages" data-name="Health Packages">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <span class="med-badge-cyan mb-2">Preventive Care</span>
+                <h2 class="display-5 fw-bold mb-3" style="color: #0B4F6C;">Master Health Checkup Packages</h2>
+                <div class="med-divider"></div>
+                <p class="text-muted lead mx-auto" style="max-width: 650px;">
+                    Early detection saves lives. Choose a comprehensive health screening tailored to your lifestyle and age group.
+                </p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="package-card d-flex flex-column shadow-sm">
+                        <span class="badge bg-light text-dark align-self-start mb-2 px-3 py-1 border">BASIC SCREEN</span>
+                        <h3 class="h4 fw-bold mb-2">Essential Wellness</h3>
+                        <div class="package-price mb-3">$99 <span class="small fw-normal text-muted">/ package</span></div>
+                        <p class="small text-muted mb-4">Recommended for young adults. Evaluates organ health, complete blood profile, and vital indices.</p>
+                        <ul class="list-unstyled small d-flex flex-column gap-2 mb-4 flex-grow-1">
+                            <li><i class="fa fa-check text-success me-2"></i> Complete Blood Count (CBC)</li>
+                            <li><i class="fa fa-check text-success me-2"></i> Liver &amp; Kidney Function Tests</li>
+                            <li><i class="fa fa-check text-success me-2"></i> Lipid Profile &amp; Blood Sugar</li>
+                            <li><i class="fa fa-check text-success me-2"></i> Resting ECG &amp; Chest X-Ray</li>
+                            <li><i class="fa fa-check text-success me-2"></i> Physician Consultation</li>
+                        </ul>
+                        <a href="/contactus?package=Essential+Wellness" class="btn btn-med-outline w-100">Book Package</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="package-card featured d-flex flex-column shadow">
+                        <span class="badge bg-primary text-light align-self-start mb-2 px-3 py-1">MOST POPULAR</span>
+                        <h3 class="h4 fw-bold mb-2">Executive Heart Screen</h3>
+                        <div class="package-price mb-3" style="color: #00A896;">$199 <span class="small fw-normal text-muted">/ package</span></div>
+                        <p class="small text-muted mb-4">Comprehensive cardiovascular and metabolic evaluation designed for working professionals.</p>
+                        <ul class="list-unstyled small d-flex flex-column gap-2 mb-4 flex-grow-1">
+                            <li><i class="fa fa-check text-success me-2"></i> All Essential Wellness Tests</li>
+                            <li><i class="fa fa-check text-success me-2"></i> 2D Echocardiogram &amp; TMT (Stress Test)</li>
+                            <li><i class="fa fa-check text-success me-2"></i> HbA1c Glycated Hemoglobin</li>
+                            <li><i class="fa fa-check text-success me-2"></i> Thyroid Profile (T3, T4, TSH)</li>
+                            <li><i class="fa fa-check text-success me-2"></i> Senior Cardiologist Consultation</li>
+                        </ul>
+                        <a href="/contactus?package=Executive+Heart" class="btn btn-med-cyan w-100">Book Package</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="package-card d-flex flex-column shadow-sm">
+                        <span class="badge bg-light text-dark align-self-start mb-2 px-3 py-1 border">COMPREHENSIVE</span>
+                        <h3 class="h4 fw-bold mb-2">Comprehensive Master Care</h3>
+                        <div class="package-price mb-3">$299 <span class="small fw-normal text-muted">/ package</span></div>
+                        <p class="small text-muted mb-4">Extensive full-body screening including oncology markers, bone density, and ultrasound.</p>
+                        <ul class="list-unstyled small d-flex flex-column gap-2 mb-4 flex-grow-1">
+                            <li><i class="fa fa-check text-success me-2"></i> All Executive Heart Tests</li>
+                            <li><i class="fa fa-check text-success me-2"></i> Whole Abdomen Ultrasound</li>
+                            <li><i class="fa fa-check text-success me-2"></i> Cancer Screening Markers (PSA/Pap)</li>
+                            <li><i class="fa fa-check text-success me-2"></i> Vitamin D3 &amp; Vitamin B12</li>
+                            <li><i class="fa fa-check text-success me-2"></i> Diet &amp; Lifestyle Counseling</li>
+                        </ul>
+                        <a href="/contactus?package=Master+Health" class="btn btn-med-outline w-100">Book Package</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</template>
+</odoo>

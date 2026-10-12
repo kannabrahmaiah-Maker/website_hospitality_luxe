@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_featured_rooms" name="Featured Room Cards">
+    <section class="s_featured_rooms py-5" style="background-color: #FAF7F2;" data-snippet="s_featured_rooms" data-name="Featured Room Cards">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <span class="luxe-badge-gold mb-2">Accommodations</span>
+                <h2 class="display-5 fw-bold mb-3" style="color: #172A28; font-family: var(--lux-font-heading);">
+                    Exceptional Suites &amp; Private Villas
+                </h2>
+                <div class="luxe-divider"></div>
+                <p class="text-muted lead mx-auto" style="max-width: 650px;">
+                    Individually curated sanctuaries designed with natural teak, Italian marble, and unobstructed ocean panoramas.
+                </p>
+            </div>
+            <div class="row g-4">
+                <!-- Suite 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="room-card h-100 d-flex flex-column">
+                        <div class="room-img-wrap">
+                            <img src="/website_hospitality_luxe/static/src/img/content/presidential_suite.jpg" alt="Presidential Oceanfront Penthouse"/>
+                            <div class="room-price-badge">From $1,250 <span style="font-size: 0.75rem; font-weight: normal; color: #E2E8F0;">/ night</span></div>
+                        </div>
+                        <div class="p-4 d-flex flex-column flex-grow-1">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span class="badge bg-secondary text-light">320 m² | 4 Guests</span>
+                                <span style="color: #C5A46D; font-size: 0.85rem;"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span>
+                            </div>
+                            <h3 class="h4 fw-bold mb-2" style="color: #172A28; font-family: var(--lux-font-heading);">The Presidential Penthouse</h3>
+                            <p class="text-muted small mb-3 flex-grow-1">
+                                Master bedroom with 180° ocean views, private wraparound terrace, freestanding marble soaking tub, and 24h butler service.
+                            </p>
+                            <div class="border-top pt-3 d-flex justify-content-between align-items-center">
+                                <div class="small text-muted"><i class="fa fa-wifi me-1"></i> WiFi • <i class="fa fa-coffee me-1"></i> Bar • <i class="fa fa-bath me-1"></i> Spa Bath</div>
+                                <a href="/contactus?room=Presidential+Penthouse" class="btn btn-sm btn-luxe-gold">Reserve</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Suite 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="room-card h-100 d-flex flex-column">
+                        <div class="room-img-wrap">
+                            <img src="/website_hospitality_luxe/static/src/img/content/pool_villa.jpg" alt="Royal Beachfront Pool Villa"/>
+                            <div class="room-price-badge">From $950 <span style="font-size: 0.75rem; font-weight: normal; color: #E2E8F0;">/ night</span></div>
+                        </div>
+                        <div class="p-4 d-flex flex-column flex-grow-1">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span class="badge bg-secondary text-light">240 m² | 2 Guests</span>
+                                <span style="color: #C5A46D; font-size: 0.85rem;"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span>
+                            </div>
+                            <h3 class="h4 fw-bold mb-2" style="color: #172A28; font-family: var(--lux-font-heading);">Royal Garden Pool Villa</h3>
+                            <p class="text-muted small mb-3 flex-grow-1">
+                                Secluded private plunge pool set in lush tropical gardens, teak sun loungers, outdoor rain shower, and direct beach trail.
+                            </p>
+                            <div class="border-top pt-3 d-flex justify-content-between align-items-center">
+                                <div class="small text-muted"><i class="fa fa-tint me-1"></i> Pool • <i class="fa fa-leaf me-1"></i> Garden • <i class="fa fa-cutlery me-1"></i> Dining</div>
+                                <a href="/contactus?room=Royal+Garden+Pool+Villa" class="btn btn-sm btn-luxe-gold">Reserve</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Suite 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="room-card h-100 d-flex flex-column">
+                        <div class="room-img-wrap">
+                            <img src="/website_hospitality_luxe/static/src/img/content/hero_resort.jpg" alt="Overwater Sunset Haven"/>
+                            <div class="room-price-badge">From $820 <span style="font-size: 0.75rem; font-weight: normal; color: #E2E8F0;">/ night</span></div>
+                        </div>
+                        <div class="p-4 d-flex flex-column flex-grow-1">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span class="badge bg-secondary text-light">180 m² | 2 Guests</span>
+                                <span style="color: #C5A46D; font-size: 0.85rem;"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span>
+                            </div>
+                            <h3 class="h4 fw-bold mb-2" style="color: #172A28; font-family: var(--lux-font-heading);">Overwater Sunset Villa</h3>
+                            <p class="text-muted small mb-3 flex-grow-1">
+                                Suspended directly above turquoise waters with private catamaran hammocks, glass floor panels, and panoramic golden sunset views.
+                            </p>
+                            <div class="border-top pt-3 d-flex justify-content-between align-items-center">
+                                <div class="small text-muted"><i class="fa fa-sun-o me-1"></i> Sunset • <i class="fa fa-water me-1"></i> Lagoon • <i class="fa fa-tv me-1"></i> Media</div>
+                                <a href="/contactus?room=Overwater+Sunset+Villa" class="btn btn-sm btn-luxe-gold">Reserve</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <a href="/rooms-suites" class="btn btn-luxe-outline px-4 py-2">View All 12 Suites &amp; Private Residences &amp;rarr;</a>
+            </div>
+        </div>
+    </section>
+</template>
+
+</odoo>

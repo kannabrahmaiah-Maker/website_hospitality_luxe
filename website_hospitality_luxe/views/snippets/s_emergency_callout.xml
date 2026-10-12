@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<template id="s_emergency_callout" name="Emergency &amp; Trauma Callout">
+    <section class="s_emergency_callout py-4" style="background: linear-gradient(135deg, #072635 0%, #0B4F6C 100%); color: #FFFFFF;" data-snippet="s_emergency_callout" data-name="Emergency Callout">
+        <div class="container py-2">
+            <div class="row align-items-center g-4">
+                <div class="col-lg-8">
+                    <div class="d-flex align-items-center gap-3">
+                        <div class="d-flex align-items-center justify-content-center rounded-circle flex-shrink-0" style="width: 58px; height: 58px; background-color: #E63946; color: #FFFFFF; font-size: 1.8rem;">
+                            <i class="fa fa-ambulance"></i>
+                        </div>
+                        <div>
+                            <span class="badge bg-danger text-uppercase mb-1">LEVEL 1 TRAUMA CARE</span>
+                            <h3 class="h4 fw-bold mb-1 text-white">24/7 Rapid Emergency &amp; Ambulance Dispatch</h3>
+                            <p class="small text-light mb-0">Dedicated stroke center, emergency cardiac catheterization, and round-the-clock intensive care physicians.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 text-lg-end">
+                    <a href="tel:18009112273" class="btn btn-med-alert btn-lg shadow">
+                        <i class="fa fa-phone me-2"></i> CALL 1-800-911-CARE
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+</template>
+</odoo>

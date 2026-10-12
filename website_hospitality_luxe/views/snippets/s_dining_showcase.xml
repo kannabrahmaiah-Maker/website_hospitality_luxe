@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<template id="s_dining_showcase" name="Fine Dining &amp; Culinary Showcase">
+    <section class="s_dining_showcase py-5" style="background-color: #FFFFFF;" data-snippet="s_dining_showcase" data-name="Fine Dining &amp; Culinary Showcase">
+        <div class="container py-4">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <div class="position-relative">
+                        <div style="border: 2px solid #C5A46D; padding: 12px; border-radius: 8px;">
+                            <img src="/website_hospitality_luxe/static/src/img/content/fine_dining.jpg" alt="Michelin Star Ocean Dining" class="img-fluid rounded shadow-lg w-100" style="max-height: 480px; object-fit: cover;"/>
+                        </div>
+                        <div class="position-absolute bottom-0 start-0 translate-middle-y bg-white p-3 rounded shadow-lg border ms-3 d-none d-sm-block" style="border-left: 4px solid #C5A46D !important;">
+                            <div class="fw-bold text-dark"><i class="fa fa-trophy text-warning me-2"></i>Best Coastal Restaurant 2025</div>
+                            <small class="text-muted">International Culinary Excellence Awards</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <span class="luxe-badge-gold mb-2">Gastronomic Artistry</span>
+                    <h2 class="display-5 fw-bold mb-3" style="color: #172A28; font-family: var(--lux-font-heading);">
+                        L'Ambroisie Ocean Dining &amp; Cellar
+                    </h2>
+                    <div class="luxe-divider-left"></div>
+                    <p class="lead text-muted mb-4">
+                        A sensory celebration of freshly harvested coastal treasures, organic estate botanicals, and rare grand cru vintages.
+                    </p>
+                    <div class="mb-4">
+                        <div class="d-flex mb-3">
+                            <div class="me-3" style="color: #C5A46D; font-size: 1.25rem;"><i class="fa fa-check-circle"></i></div>
+                            <div>
+                                <h4 class="h6 fw-bold mb-1 text-dark">Degustation Tasting Menus</h4>
+                                <p class="small text-muted mb-0">Crafted daily by Chef Éléonore Vance, celebrating local fisherman catches and seasonal terroir.</p>
+                            </div>
+                        </div>
+                        <div class="d-flex mb-3">
+                            <div class="me-3" style="color: #C5A46D; font-size: 1.25rem;"><i class="fa fa-check-circle"></i></div>
+                            <div>
+                                <h4 class="h6 fw-bold mb-1 text-dark">Grand Cru Underground Cellar</h4>
+                                <p class="small text-muted mb-0">Over 1,200 curated labels featuring Bordeaux classics, rare grower Champagnes, and biodynamic gems.</p>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <div class="me-3" style="color: #C5A46D; font-size: 1.25rem;"><i class="fa fa-check-circle"></i></div>
+                            <div>
+                                <h4 class="h6 fw-bold mb-1 text-dark">Sunset Cocktail Overlook</h4>
+                                <p class="small text-muted mb-0">Handcrafted botanical elixirs and barrel-aged aperitifs accompanied by live harp acoustics.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex gap-3 align-items-center">
+                        <a href="/contactus?type=dining" class="btn btn-luxe-gold">Reserve Table</a>
+                        <a href="/dining" class="btn btn-luxe-outline">Discover Menus</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</template>
+</odoo>

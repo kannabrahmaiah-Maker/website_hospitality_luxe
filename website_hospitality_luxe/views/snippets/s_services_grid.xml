@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<template id="s_services_grid" name="Signature Services Grid">
+    <section class="s_services_grid py-5" style="background-color: #FAF7F2;" data-snippet="s_services_grid" data-name="Signature Services Grid">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <span class="luxe-badge-gold mb-2">Unrivaled Hospitality</span>
+                <h2 class="display-5 fw-bold mb-3" style="color: #172A28; font-family: var(--lux-font-heading);">
+                    Curated Guest Services
+                </h2>
+                <div class="luxe-divider"></div>
+                <p class="text-muted lead mx-auto" style="max-width: 650px;">
+                    Impeccable personal service tailored to your lifestyle, from the moment you plan your journey until departure.
+                </p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="p-4 h-100 bg-white rounded-3 border shadow-sm transition-all">
+                        <div class="d-inline-flex p-3 rounded-circle mb-3" style="background-color: rgba(197, 164, 109, 0.15); color: #C5A46D; font-size: 1.5rem;">
+                            <i class="fa fa-plane"></i>
+                        </div>
+                        <h3 class="h5 fw-bold mb-2" style="color: #172A28;">Helipad &amp; Yacht Transfers</h3>
+                        <p class="text-muted small mb-3">Arrive smoothly via private helicopter or our custom 65-foot luxury catamaran directly to our private marina.</p>
+                        <a href="/amenities-experiences" class="text-decoration-none fw-semibold small" style="color: #C5A46D;">Learn More →</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="p-4 h-100 bg-white rounded-3 border shadow-sm transition-all">
+                        <div class="d-inline-flex p-3 rounded-circle mb-3" style="background-color: rgba(197, 164, 109, 0.15); color: #C5A46D; font-size: 1.5rem;">
+                            <i class="fa fa-heartbeat"></i>
+                        </div>
+                        <h3 class="h5 fw-bold mb-2" style="color: #172A28;">Holistic Wellness Sanctuary</h3>
+                        <p class="text-muted small mb-3">Ancient healing techniques paired with modern hydrotherapy pools, hammams, and bespoke massage rituals.</p>
+                        <a href="/amenities-experiences" class="text-decoration-none fw-semibold small" style="color: #C5A46D;">Learn More →</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="p-4 h-100 bg-white rounded-3 border shadow-sm transition-all">
+                        <div class="d-inline-flex p-3 rounded-circle mb-3" style="background-color: rgba(197, 164, 109, 0.15); color: #C5A46D; font-size: 1.5rem;">
+                            <i class="fa fa-glass"></i>
+                        </div>
+                        <h3 class="h5 fw-bold mb-2" style="color: #172A28;">Private Sommelier Tastings</h3>
+                        <p class="text-muted small mb-3">Cellar tours and rare vintage pairings guided by master sommeliers, paired with artisan cheeses and caviar.</p>
+                        <a href="/dining" class="text-decoration-none fw-semibold small" style="color: #C5A46D;">Learn More →</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="p-4 h-100 bg-white rounded-3 border shadow-sm transition-all">
+                        <div class="d-inline-flex p-3 rounded-circle mb-3" style="background-color: rgba(197, 164, 109, 0.15); color: #C5A46D; font-size: 1.5rem;">
+                            <i class="fa fa-ship"></i>
+                        </div>
+                        <h3 class="h5 fw-bold mb-2" style="color: #172A28;">Private Yacht Excursions</h3>
+                        <p class="text-muted small mb-3">Sunset cruises, deep-sea exploration, and uninhabited island beach picnics organized exclusively for your party.</p>
+                        <a href="/amenities-experiences" class="text-decoration-none fw-semibold small" style="color: #C5A46D;">Learn More →</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="p-4 h-100 bg-white rounded-3 border shadow-sm transition-all">
+                        <div class="d-inline-flex p-3 rounded-circle mb-3" style="background-color: rgba(197, 164, 109, 0.15); color: #C5A46D; font-size: 1.5rem;">
+                            <i class="fa fa-car"></i>
+                        </div>
+                        <h3 class="h5 fw-bold mb-2" style="color: #172A28;">Chauffeur Limousine Fleet</h3>
+                        <p class="text-muted small mb-3">On-demand luxury vehicle service with certified private chauffeurs available for island touring and airport pickups.</p>
+                        <a href="/about-us" class="text-decoration-none fw-semibold small" style="color: #C5A46D;">Learn More →</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="p-4 h-100 bg-white rounded-3 border shadow-sm transition-all">
+                        <div class="d-inline-flex p-3 rounded-circle mb-3" style="background-color: rgba(197, 164, 109, 0.15); color: #C5A46D; font-size: 1.5rem;">
+                            <i class="fa fa-diamond"></i>
+                        </div>
+                        <h3 class="h5 fw-bold mb-2" style="color: #172A28;">Weddings &amp; Private Atelier</h3>
+                        <p class="text-muted small mb-3">Intimate beach vows or grand celebrations planned meticulously by our resident wedding designers and floral artisans.</p>
+                        <a href="/contactus" class="text-decoration-none fw-semibold small" style="color: #C5A46D;">Learn More →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</template>
+</odoo>

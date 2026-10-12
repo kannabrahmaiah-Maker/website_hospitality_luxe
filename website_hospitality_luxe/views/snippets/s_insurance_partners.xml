@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<template id="s_insurance_partners" name="Cashless Insurance Desk">
+    <section class="s_insurance_partners py-5" style="background-color: #F4F9F9;" data-snippet="s_insurance_partners" data-name="Insurance Partners">
+        <div class="container text-center">
+            <span class="med-badge-cyan mb-2">Hassle-Free Billing</span>
+            <h2 class="display-6 fw-bold mb-3" style="color: #0B4F6C;">100% Cashless Insurance &amp; TPA Desk</h2>
+            <div class="med-divider"></div>
+            <p class="text-muted lead mx-auto mb-4" style="max-width: 650px;">
+                We partner with all leading national and international medical insurance providers for cashless hospital admissions.
+            </p>
+            <div class="row justify-content-center g-3">
+                <div class="col-6 col-sm-4 col-md-2">
+                    <div class="p-3 bg-white rounded border fw-bold text-muted small shadow-sm">Blue Cross</div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-2">
+                    <div class="p-3 bg-white rounded border fw-bold text-muted small shadow-sm">Bupa Global</div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-2">
+                    <div class="p-3 bg-white rounded border fw-bold text-muted small shadow-sm">Cigna Health</div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-2">
+                    <div class="p-3 bg-white rounded border fw-bold text-muted small shadow-sm">Allianz Care</div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-2">
+                    <div class="p-3 bg-white rounded border fw-bold text-muted small shadow-sm">Star Health</div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-2">
+                    <div class="p-3 bg-white rounded border fw-bold text-muted small shadow-sm">UnitedHealth</div>
+                </div>
+            </div>
+            <div class="mt-4">
+                <a href="/patient-guide" class="btn btn-sm btn-med-outline">View Cashless Admission Guide →</a>
+            </div>
+        </div>
+    </section>
+</template>
+</odoo>

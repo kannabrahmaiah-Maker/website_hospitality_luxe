@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<template id="s_featured_doctors" name="Featured Doctors &amp; Specialists">
+    <section class="s_featured_doctors py-5" style="background-color: #FFFFFF;" data-snippet="s_featured_doctors" data-name="Featured Doctors">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <span class="med-badge-navy mb-2">Medical Faculty</span>
+                <h2 class="display-5 fw-bold mb-3" style="color: #0B4F6C;">Senior Specialists &amp; Surgeons</h2>
+                <div class="med-divider"></div>
+                <p class="text-muted lead mx-auto" style="max-width: 650px;">
+                    Our internationally trained physicians combine decades of clinical expertise with personalized bedside care.
+                </p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="doctor-card h-100 d-flex flex-column">
+                        <div class="doctor-img-wrap">
+                            <img src="/website_hospitality_luxe/static/src/img/content/doctor_srinivas.jpg" alt="Dr. K. Srinivas Rao"/>
+                        </div>
+                        <div class="p-4 d-flex flex-column flex-grow-1">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span class="badge bg-primary-subtle text-primary border border-primary-subtle px-2 py-1 fw-bold" style="font-size: 0.75rem;">CARDIOLOGY</span>
+                                <span class="small text-success fw-semibold"><i class="fa fa-circle me-1" style="font-size: 0.55rem;"></i> Available Today</span>
+                            </div>
+                            <h3 class="h5 fw-bold mb-1" style="color: #0B4F6C;">Dr. K. Srinivas Rao</h3>
+                            <p class="text-muted small mb-2">MD, DM (Cardiology), FACC • 22+ Years Exp</p>
+                            <p class="small text-muted flex-grow-1 mb-3" style="line-height: 1.6;">Chief Interventional Cardiologist specializing in complex coronary interventions, TAVR, and heart failure therapies.</p>
+                            <div class="border-top pt-3 d-flex justify-content-between align-items-center">
+                                <span class="small text-muted"><i class="fa fa-clock-o me-1 text-info"></i> Mon - Fri (09:00 - 14:00)</span>
+                                <a href="#appointment_bar" class="btn btn-sm btn-med-cyan">Book Consult</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="doctor-card h-100 d-flex flex-column">
+                        <div class="doctor-img-wrap">
+                            <img src="/website_hospitality_luxe/static/src/img/content/doctor_usha.jpg" alt="Dr. Usha Nandhini"/>
+                        </div>
+                        <div class="p-4 d-flex flex-column flex-grow-1">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span class="badge bg-info-subtle text-info border border-info-subtle px-2 py-1 fw-bold" style="font-size: 0.75rem;">PEDIATRICS &amp; NICU</span>
+                                <span class="small text-success fw-semibold"><i class="fa fa-circle me-1" style="font-size: 0.55rem;"></i> Available Today</span>
+                            </div>
+                            <h3 class="h5 fw-bold mb-1" style="color: #0B4F6C;">Dr. Usha Nandhini</h3>
+                            <p class="text-muted small mb-2">MD, FAAP, DCH • 18+ Years Exp</p>
+                            <p class="small text-muted flex-grow-1 mb-3" style="line-height: 1.6;">Head of Pediatric Medicine &amp; Neonatal Intensive Care, recognized for compassionate child health management.</p>
+                            <div class="border-top pt-3 d-flex justify-content-between align-items-center">
+                                <span class="small text-muted"><i class="fa fa-clock-o me-1 text-info"></i> Mon - Sat (10:00 - 16:00)</span>
+                                <a href="#appointment_bar" class="btn btn-sm btn-med-cyan">Book Consult</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="doctor-card h-100 d-flex flex-column">
+                        <div class="doctor-img-wrap">
+                            <img src="/website_hospitality_luxe/static/src/img/content/doctor_ganesh_gowda.jpg" alt="Dr. Ganesh Gowda"/>
+                        </div>
+                        <div class="p-4 d-flex flex-column flex-grow-1">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span class="badge bg-success-subtle text-success border border-success-subtle px-2 py-1 fw-bold" style="font-size: 0.75rem;">ORTHOPEDICS</span>
+                                <span class="small text-success fw-semibold"><i class="fa fa-circle me-1" style="font-size: 0.55rem;"></i> Available Today</span>
+                            </div>
+                            <h3 class="h5 fw-bold mb-1" style="color: #0B4F6C;">Dr. Ganesh Gowda</h3>
+                            <p class="text-muted small mb-2">MS (Ortho), MCh, FRCS • 20+ Years Exp</p>
+                            <p class="small text-muted flex-grow-1 mb-3" style="line-height: 1.6;">Senior Consultant Joint Replacement &amp; Robotic Spine Surgeon with over 5,000 successful joint procedures.</p>
+                            <div class="border-top pt-3 d-flex justify-content-between align-items-center">
+                                <span class="small text-muted"><i class="fa fa-clock-o me-1 text-info"></i> Tue - Sat (11:00 - 17:00)</span>
+                                <a href="#appointment_bar" class="btn btn-sm btn-med-cyan">Book Consult</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <a href="/doctors" class="btn btn-med-outline">
+                    Explore All Specialists &amp; Faculty <i class="fa fa-arrow-right ms-1"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+</template>
+</odoo>

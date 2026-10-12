@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<template id="s_booking_cta" name="Luxury Booking CTA Bar">
+    <section class="s_booking_cta py-5" style="background-color: #172A28; color: #FFFFFF;" data-snippet="s_booking_cta" data-name="Luxury Booking CTA Bar">
+        <div class="container py-5 text-center">
+            <span class="luxe-badge-gold mb-3">Begin Your Journey</span>
+            <h2 class="display-4 fw-bold mb-3" style="color: #FFFFFF; font-family: var(--lux-font-heading);">
+                Your Unforgettable Stay Awaits
+            </h2>
+            <div class="luxe-divider mb-4"></div>
+            <p class="lead mx-auto mb-4 text-light" style="max-width: 680px; font-size: 1.15rem; line-height: 1.8;">
+                Book directly through our official portal to enjoy guaranteed best available rates, complimentary champagne upon arrival, and priority room upgrades.
+            </p>
+            <div class="d-flex flex-wrap justify-content-center gap-3">
+                <a href="/contactus" class="btn btn-luxe-gold px-4 py-3">Reserve Your Villa</a>
+                <a href="tel:+18008925893" class="btn btn-luxe-outline px-4 py-3"><i class="fa fa-phone me-2"></i>Speak With Concierge</a>
+            </div>
+        </div>
+    </section>
+</template>
+</odoo>

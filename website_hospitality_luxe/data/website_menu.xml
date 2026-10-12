@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="0">
+        <record id="menu_about_us" model="website.menu">
+            <field name="name">About Us</field>
+            <field name="url">/about-us</field>
+            <field name="page_id" ref="website_hospitality_luxe.page_about_us"/>
+            <field name="parent_id" ref="website.main_menu"/>
+            <field name="sequence" type="int">20</field>
+        </record>
+
+        <record id="menu_doctors" model="website.menu">
+            <field name="name">Doctors</field>
+            <field name="url">/doctors</field>
+            <field name="page_id" ref="website_hospitality_luxe.page_doctors"/>
+            <field name="parent_id" ref="website.main_menu"/>
+            <field name="sequence" type="int">30</field>
+        </record>
+
+        <record id="menu_departments" model="website.menu">
+            <field name="name">Departments</field>
+            <field name="url">/departments</field>
+            <field name="page_id" ref="website_hospitality_luxe.page_departments"/>
+            <field name="parent_id" ref="website.main_menu"/>
+            <field name="sequence" type="int">40</field>
+        </record>
+
+        <record id="menu_facilities" model="website.menu">
+            <field name="name">Facilities</field>
+            <field name="url">/facilities</field>
+            <field name="page_id" ref="website_hospitality_luxe.page_facilities"/>
+            <field name="parent_id" ref="website.main_menu"/>
+            <field name="sequence" type="int">50</field>
+        </record>
+
+        <record id="menu_patient_guide" model="website.menu">
+            <field name="name">Patient Guide</field>
+            <field name="url">/patient-guide</field>
+            <field name="page_id" ref="website_hospitality_luxe.page_patient_guide"/>
+            <field name="parent_id" ref="website.main_menu"/>
+            <field name="sequence" type="int">60</field>
+        </record>
+
+        <record id="menu_gallery" model="website.menu">
+            <field name="name">Gallery</field>
+            <field name="url">/gallery</field>
+            <field name="page_id" ref="website_hospitality_luxe.page_gallery"/>
+            <field name="parent_id" ref="website.main_menu"/>
+            <field name="sequence" type="int">70</field>
+        </record>
+    </data>
+</odoo>

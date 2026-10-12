@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<template id="s_hospital_hero" name="Hospital Hero Banner">
+    <section class="s_hospital_hero position-relative text-white" data-snippet="s_hospital_hero" data-name="Hospital Hero Banner">
+        <img src="/website_hospitality_luxe/static/src/img/content/hospital_hero.jpg" alt="Modern Multi-Specialty Hospital" class="hero-bg"/>
+        <div class="hero-overlay"></div>
+        <div class="container hero-content py-4">
+            <div class="row align-items-center g-4 g-lg-5">
+                <!-- Left Column: Title & CTA -->
+                <div class="col-lg-7">
+                    <div class="med-hero-badge mb-3">
+                        <span class="pulse-indicator"></span>
+                        <span>24/7 Emergency • JCI &amp; NABH Certified</span>
+                    </div>
+                    <h1 class="hero-headline fw-bold mb-3 text-white">
+                        Advanced Medical Care. <br/>
+                        <span style="color: #48E5C2;">Compassionate Healing.</span>
+                    </h1>
+                    <p class="hero-subtext mb-4 text-light" style="max-width: 620px; line-height: 1.7; color: #E2E8F0;">
+                        Dedicated to clinical excellence with senior specialist physicians, state-of-the-art robotic surgery, and rapid-response emergency trauma care.
+                    </p>
+                    <div class="d-flex flex-wrap gap-2 gap-sm-3 mb-4 hero-cta-buttons">
+                        <a href="#appointment_bar" class="btn btn-med-cyan shadow-sm">
+                            <i class="fa fa-calendar-check-o me-2"></i> Book Doctor Appointment
+                        </a>
+                        <a href="tel:18009112273" class="btn btn-med-alert shadow-sm">
+                            <i class="fa fa-ambulance me-2"></i> 24/7 ER: 1-800-911-CARE
+                        </a>
+                    </div>
+                    <div class="row g-2 text-light small pt-3 border-top border-secondary hero-metrics" style="border-color: rgba(255,255,255,0.2) !important; max-width: 580px;">
+                        <div class="col-6 col-sm-3"><i class="fa fa-star text-warning me-1"></i> <strong>4.9/5</strong> Rating</div>
+                        <div class="col-6 col-sm-3"><i class="fa fa-hospital-o text-info me-1"></i> <strong>500+</strong> Beds</div>
+                        <div class="col-6 col-sm-3"><i class="fa fa-user-md text-info me-1"></i> <strong>120+</strong> Doctors</div>
+                        <div class="col-6 col-sm-3"><i class="fa fa-shield text-success me-1"></i> <strong>Cashless</strong> TPA</div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Quick Status / Doctor Highlight Card -->
+                <div class="col-lg-5">
+                    <div class="hero-quick-card text-start">
+                        <div class="d-flex align-items-center justify-content-between mb-3 pb-3 border-bottom border-secondary" style="border-color: rgba(255,255,255,0.15) !important;">
+                            <div>
+                                <h4 class="h6 fw-bold mb-0 text-white"><i class="fa fa-clock-o text-info me-2"></i> OPD Consultation Hours</h4>
+                                <small class="text-light-50" style="color: #94A3B8;">Walk-ins &amp; Online Booking</small>
+                            </div>
+                            <span class="badge bg-success px-2 py-1" style="font-size: 0.72rem;">● Clinics Open</span>
+                        </div>
+                        <div class="d-flex align-items-center gap-3 p-3 rounded-3 mb-3" style="background: rgba(255,255,255,0.08);">
+                            <img src="/website_hospitality_luxe/static/src/img/content/doctor_srinivas.jpg" alt="Dr. Srinivas" class="rounded-circle" style="width: 48px; height: 48px; object-fit: cover; border: 2px solid #00A896;"/>
+                            <div>
+                                <div class="fw-bold text-white small">Dr. K. Srinivas Rao</div>
+                                <div class="text-info" style="font-size: 0.76rem;">Chief Cardiologist • Available Today</div>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center gap-3 p-3 rounded-3 mb-3" style="background: rgba(255,255,255,0.08);">
+                            <img src="/website_hospitality_luxe/static/src/img/content/doctor_usha.jpg" alt="Dr. Usha" class="rounded-circle" style="width: 48px; height: 48px; object-fit: cover; border: 2px solid #00A896;"/>
+                            <div>
+                                <div class="fw-bold text-white small">Dr. Usha Nandhini</div>
+                                <div class="text-info" style="font-size: 0.76rem;">Senior Pediatrician • Available Today</div>
+                            </div>
+                        </div>
+                        <a href="/doctors" class="btn btn-sm btn-outline-light w-100 fw-semibold" style="border-color: rgba(255,255,255,0.4);">
+                            View All 120+ Specialists <i class="fa fa-arrow-right ms-1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</template>
+</odoo>

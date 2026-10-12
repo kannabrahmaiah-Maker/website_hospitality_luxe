@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<template id="s_patient_testimonials" name="Patient Recovery Testimonials">
+    <section class="s_patient_testimonials py-5" style="background-color: #FFFFFF;" data-snippet="s_patient_testimonials" data-name="Patient Testimonials">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <span class="med-badge-navy mb-2">Patient Voices</span>
+                <h2 class="display-5 fw-bold mb-3" style="color: #0B4F6C;">Stories of Healing &amp; Recovery</h2>
+                <div class="med-divider"></div>
+                <p class="text-muted lead mx-auto" style="max-width: 650px;">
+                    Read reflections from patients and families who experienced healing and support at our hospital.
+                </p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="p-4 bg-light rounded-3 border h-100 d-flex flex-column shadow-sm">
+                        <div class="mb-3 text-warning">
+                            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                        </div>
+                        <p class="text-muted fst-italic flex-grow-1 mb-4" style="line-height: 1.7;">
+                            "I was admitted under Dr. Srinivas for emergency angioplasty. The rapid cath lab team was phenomenal. Within 40 minutes of entering emergency, my blockage was cleared. I am back to work feeling healthier than ever."
+                        </p>
+                        <div class="border-top pt-3 d-flex align-items-center">
+                            <div class="rounded-circle text-white d-flex align-items-center justify-content-center me-3" style="width: 44px; height: 44px; background-color: #0B4F6C; font-weight: bold;">
+                                RK
+                            </div>
+                            <div>
+                                <h4 class="h6 fw-bold mb-0 text-dark">Robert K.</h4>
+                                <small class="text-muted">Cardiac Bypass Patient • Stayed 4 Days</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-4 bg-light rounded-3 border h-100 d-flex flex-column shadow-sm">
+                        <div class="mb-3 text-warning">
+                            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                        </div>
+                        <p class="text-muted fst-italic flex-grow-1 mb-4" style="line-height: 1.7;">
+                            "Dr. Ganesh Gowda performed robotic knee replacement for both my legs. I was able to walk with support on day two, and now I hike without pain. The physiotherapy team and nursing staff were exceptionally kind."
+                        </p>
+                        <div class="border-top pt-3 d-flex align-items-center">
+                            <div class="rounded-circle text-white d-flex align-items-center justify-content-center me-3" style="width: 44px; height: 44px; background-color: #00A896; font-weight: bold;">
+                                EM
+                            </div>
+                            <div>
+                                <h4 class="h6 fw-bold mb-0 text-dark">Elena Morales</h4>
+                                <small class="text-muted">Robotic Knee Replacement • Patient</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-4 bg-light rounded-3 border h-100 d-flex flex-column shadow-sm">
+                        <div class="mb-3 text-warning">
+                            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                        </div>
+                        <p class="text-muted fst-italic flex-grow-1 mb-4" style="line-height: 1.7;">
+                            "When my son had high fever and complications, Dr. Usha and the pediatric emergency team gave us reassurance and immediate care. The private recovery room was clean, quiet, and comforting for our family."
+                        </p>
+                        <div class="border-top pt-3 d-flex align-items-center">
+                            <div class="rounded-circle text-white d-flex align-items-center justify-content-center me-3" style="width: 44px; height: 44px; background-color: #0B4F6C; font-weight: bold;">
+                                DA
+                            </div>
+                            <div>
+                                <h4 class="h6 fw-bold mb-0 text-dark">David &amp; Sarah Adams</h4>
+                                <small class="text-muted">Pediatric Inpatient Parents</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</template>
+</odoo>

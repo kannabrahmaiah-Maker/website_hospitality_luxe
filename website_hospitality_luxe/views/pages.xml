@@ -1,0 +1,569 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- 1. Homepage Enrichment -->
+    <template id="luxe_homepage" inherit_id="website.homepage" name="Hospital Care Homepage" priority="30">
+        <xpath expr="//div[@id='wrap']" position="replace">
+            <div id="wrap" class="oe_structure oe_empty">
+                <t t-call="website_hospitality_luxe.s_hospital_hero"/>
+                <t t-call="website_hospitality_luxe.s_appointment_bar"/>
+                <t t-call="website_hospitality_luxe.s_emergency_callout"/>
+                <t t-call="website_hospitality_luxe.s_departments_grid"/>
+                <t t-call="website_hospitality_luxe.s_featured_doctors"/>
+                <t t-call="website_hospitality_luxe.s_hospital_stats"/>
+                <t t-call="website_hospitality_luxe.s_services_facilities"/>
+                <t t-call="website_hospitality_luxe.s_health_packages"/>
+                <t t-call="website_hospitality_luxe.s_patient_testimonials"/>
+                <t t-call="website_hospitality_luxe.s_accreditation_badges"/>
+                <t t-call="website_hospitality_luxe.s_virtual_tour"/>
+                <t t-call="website_hospitality_luxe.s_insurance_partners"/>
+                <t t-call="website_hospitality_luxe.s_patient_faq"/>
+                <t t-call="website_hospitality_luxe.s_hospital_location"/>
+                <t t-call="website_hospitality_luxe.s_appointment_cta"/>
+            </div>
+        </xpath>
+    </template>
+
+    <!-- 2. Doctors & Specialists Directory Page -->
+    <template id="doctors" name="Find Doctors &amp; Specialists - Hospital Care">
+        <t t-call="website.layout">
+            <div id="wrap" class="oe_structure oe_empty">
+                <!-- Page Hero -->
+                <section class="py-5 text-white text-center position-relative" style="background-color: #073B52; min-height: 320px; display: flex; align-items: center;">
+                    <img src="/website_hospitality_luxe/static/src/img/content/doctor_consultation.jpg" alt="Specialist Doctors" class="position-absolute top-0 start-0 w-100 h-100" style="object-fit: cover; filter: brightness(0.35);"/>
+                    <div class="position-absolute top-0 start-0 w-100 h-100" style="background: linear-gradient(135deg, rgba(7,59,82,0.85) 0%, rgba(11,79,108,0.7) 100%);"></div>
+                    <div class="container py-4 position-relative" style="z-index: 2;">
+                        <span class="med-badge-cyan mb-3 text-white" style="background-color: rgba(0,168,150,0.3); border-color: #00A896;">Expert Clinical Faculty</span>
+                        <h1 class="display-4 fw-bold mb-3 text-white">Find a Doctor &amp; Medical Specialists</h1>
+                        <div class="med-divider"></div>
+                        <p class="lead mx-auto text-light" style="max-width: 700px;">Meet our board-certified medical professors, senior surgeons, and compassionate healthcare specialists.</p>
+                    </div>
+                </section>
+
+                <!-- Doctors Detailed Directory Section -->
+                <section class="py-5" style="background-color: #F4F9F9;">
+                    <div class="container py-3">
+                        <div class="row g-4 mb-4">
+                            <!-- Doctor 1: Cardiology -->
+                            <div class="col-md-6 col-lg-4">
+                                <div class="med-doctor-card h-100 bg-white rounded-3 shadow-sm overflow-hidden d-flex flex-column">
+                                    <div class="position-relative" style="height: 280px; overflow: hidden;">
+                                        <img src="/website_hospitality_luxe/static/src/img/content/doctor_srinivas.jpg" alt="Dr. K. Srinivas Rao" class="w-100 h-100" style="object-fit: cover;"/>
+                                        <span class="badge position-absolute top-0 end-0 m-3 text-white px-3 py-2" style="background: #0B4F6C; font-size: 0.78rem;">Cardiology</span>
+                                    </div>
+                                    <div class="p-4 d-flex flex-column flex-grow-1">
+                                        <h4 class="h5 fw-bold mb-1" style="color: #0B4F6C;">Dr. K. Srinivas Rao</h4>
+                                        <p class="text-info fw-semibold small mb-2">MBBS, MD (Gen Med), DM (Cardiology)</p>
+                                        <p class="small text-muted mb-3" style="line-height: 1.6;">Chief Interventional Cardiologist with 22+ years experience in complex angioplasty, TAVR, and coronary stenting.</p>
+                                        <div class="small text-muted mb-3 p-2 rounded" style="background-color: #F8FAFC; border-left: 3px solid #00A896;">
+                                            <div><strong>OPD Schedule:</strong> Mon - Fri (09:00 - 14:00)</div>
+                                            <div><strong>Room:</strong> OPD Block A, Room 204</div>
+                                        </div>
+                                        <div class="mt-auto">
+                                            <a href="#appointment_bar" class="btn btn-sm btn-med-cyan w-100">
+                                                <i class="fa fa-calendar-check-o me-1"></i> Book Consultation
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Doctor 2: Pediatrics -->
+                            <div class="col-md-6 col-lg-4">
+                                <div class="med-doctor-card h-100 bg-white rounded-3 shadow-sm overflow-hidden d-flex flex-column">
+                                    <div class="position-relative" style="height: 280px; overflow: hidden;">
+                                        <img src="/website_hospitality_luxe/static/src/img/content/doctor_usha.jpg" alt="Dr. Usha Nandhini" class="w-100 h-100" style="object-fit: cover;"/>
+                                        <span class="badge position-absolute top-0 end-0 m-3 text-white px-3 py-2" style="background: #00A896; font-size: 0.78rem;">Pediatrics &amp; NICU</span>
+                                    </div>
+                                    <div class="p-4 d-flex flex-column flex-grow-1">
+                                        <h4 class="h5 fw-bold mb-1" style="color: #0B4F6C;">Dr. Usha Nandhini</h4>
+                                        <p class="text-info fw-semibold small mb-2">MBBS, MD (Pediatrics), DNB, FIAP</p>
+                                        <p class="small text-muted mb-3" style="line-height: 1.6;">Senior Consultant Pediatrician &amp; Neonatal Care specialist with 16+ years of clinical excellence in child healthcare.</p>
+                                        <div class="small text-muted mb-3 p-2 rounded" style="background-color: #F8FAFC; border-left: 3px solid #00A896;">
+                                            <div><strong>OPD Schedule:</strong> Mon - Sat (10:00 - 15:00)</div>
+                                            <div><strong>Room:</strong> Mother &amp; Child Wing, Room 108</div>
+                                        </div>
+                                        <div class="mt-auto">
+                                            <a href="#appointment_bar" class="btn btn-sm btn-med-cyan w-100">
+                                                <i class="fa fa-calendar-check-o me-1"></i> Book Consultation
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Doctor 3: Orthopedics -->
+                            <div class="col-md-6 col-lg-4">
+                                <div class="med-doctor-card h-100 bg-white rounded-3 shadow-sm overflow-hidden d-flex flex-column">
+                                    <div class="position-relative" style="height: 280px; overflow: hidden;">
+                                        <img src="/website_hospitality_luxe/static/src/img/content/doctor_ganesh_gowda.jpg" alt="Dr. Ganesh Gowda" class="w-100 h-100" style="object-fit: cover;"/>
+                                        <span class="badge position-absolute top-0 end-0 m-3 text-white px-3 py-2" style="background: #0B4F6C; font-size: 0.78rem;">Orthopedics</span>
+                                    </div>
+                                    <div class="p-4 d-flex flex-column flex-grow-1">
+                                        <h4 class="h5 fw-bold mb-1" style="color: #0B4F6C;">Dr. Ganesh Gowda</h4>
+                                        <p class="text-info fw-semibold small mb-2">MBBS, MS (Ortho), MCh (Joint Replacements)</p>
+                                        <p class="small text-muted mb-3" style="line-height: 1.6;">Chief Orthopedic &amp; Robotic Knee/Hip Replacement Surgeon with 18+ years of minimally invasive surgery mastery.</p>
+                                        <div class="small text-muted mb-3 p-2 rounded" style="background-color: #F8FAFC; border-left: 3px solid #00A896;">
+                                            <div><strong>OPD Schedule:</strong> Mon, Wed, Fri (11:00 - 16:00)</div>
+                                            <div><strong>Room:</strong> Joint &amp; Spine Wing, Room 312</div>
+                                        </div>
+                                        <div class="mt-auto">
+                                            <a href="#appointment_bar" class="btn btn-sm btn-med-cyan w-100">
+                                                <i class="fa fa-calendar-check-o me-1"></i> Book Consultation
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Doctor 4: Neurology -->
+                            <div class="col-md-6 col-lg-4">
+                                <div class="med-doctor-card h-100 bg-white rounded-3 shadow-sm overflow-hidden d-flex flex-column">
+                                    <div class="position-relative" style="height: 280px; overflow: hidden; background: #E2E8F0;">
+                                        <img src="/website_hospitality_luxe/static/src/img/content/doctor_consultation.jpg" alt="Dr. Rajesh Varma" class="w-100 h-100" style="object-fit: cover; object-position: top;"/>
+                                        <span class="badge position-absolute top-0 end-0 m-3 text-white px-3 py-2" style="background: #073B52; font-size: 0.78rem;">Neurosciences</span>
+                                    </div>
+                                    <div class="p-4 d-flex flex-column flex-grow-1">
+                                        <h4 class="h5 fw-bold mb-1" style="color: #0B4F6C;">Dr. Rajesh Varma</h4>
+                                        <p class="text-info fw-semibold small mb-2">MBBS, MD, DM (Neurology), Stroke Fellowship</p>
+                                        <p class="small text-muted mb-3" style="line-height: 1.6;">Senior Neurologist specializing in acute stroke thrombolysis, epilepsy management, Parkinson's disease, and neuropathy.</p>
+                                        <div class="small text-muted mb-3 p-2 rounded" style="background-color: #F8FAFC; border-left: 3px solid #00A896;">
+                                            <div><strong>OPD Schedule:</strong> Tue, Thu, Sat (09:30 - 13:30)</div>
+                                            <div><strong>Room:</strong> Neuro Sciences Clinic, Room 405</div>
+                                        </div>
+                                        <div class="mt-auto">
+                                            <a href="#appointment_bar" class="btn btn-sm btn-med-cyan w-100">
+                                                <i class="fa fa-calendar-check-o me-1"></i> Book Consultation
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Doctor 5: Robotic General & GI Surgery -->
+                            <div class="col-md-6 col-lg-4">
+                                <div class="med-doctor-card h-100 bg-white rounded-3 shadow-sm overflow-hidden d-flex flex-column">
+                                    <div class="position-relative" style="height: 280px; overflow: hidden;">
+                                        <img src="/website_hospitality_luxe/static/src/img/content/advanced_surgery.jpg" alt="Dr. Priya Sen" class="w-100 h-100" style="object-fit: cover;"/>
+                                        <span class="badge position-absolute top-0 end-0 m-3 text-white px-3 py-2" style="background: #00A896; font-size: 0.78rem;">Robotic Surgery</span>
+                                    </div>
+                                    <div class="p-4 d-flex flex-column flex-grow-1">
+                                        <h4 class="h5 fw-bold mb-1" style="color: #0B4F6C;">Dr. Priya Sen</h4>
+                                        <p class="text-info fw-semibold small mb-2">MBBS, MS (Surg), FMAS, Da Vinci Fellow</p>
+                                        <p class="small text-muted mb-3" style="line-height: 1.6;">Consultant Laparoscopic and Da Vinci Robotic Surgeon with extensive experience in hernia, bariatric, and GI interventions.</p>
+                                        <div class="small text-muted mb-3 p-2 rounded" style="background-color: #F8FAFC; border-left: 3px solid #00A896;">
+                                            <div><strong>OPD Schedule:</strong> Daily Mon - Sat (12:00 - 16:00)</div>
+                                            <div><strong>Room:</strong> Surgical Suites Wing, Room 218</div>
+                                        </div>
+                                        <div class="mt-auto">
+                                            <a href="#appointment_bar" class="btn btn-sm btn-med-cyan w-100">
+                                                <i class="fa fa-calendar-check-o me-1"></i> Book Consultation
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Doctor 6: Emergency Trauma & Critical Care -->
+                            <div class="col-md-6 col-lg-4">
+                                <div class="med-doctor-card h-100 bg-white rounded-3 shadow-sm overflow-hidden d-flex flex-column">
+                                    <div class="position-relative" style="height: 280px; overflow: hidden;">
+                                        <img src="/website_hospitality_luxe/static/src/img/content/emergency_care.jpg" alt="Dr. Arun K. Patel" class="w-100 h-100" style="object-fit: cover;"/>
+                                        <span class="badge position-absolute top-0 end-0 m-3 text-white px-3 py-2" style="background: #E63946; font-size: 0.78rem;">Emergency &amp; Trauma</span>
+                                    </div>
+                                    <div class="p-4 d-flex flex-column flex-grow-1">
+                                        <h4 class="h5 fw-bold mb-1" style="color: #0B4F6C;">Dr. Arun K. Patel</h4>
+                                        <p class="text-info fw-semibold small mb-2">MD (Emergency Medicine), FCCP, EDIC</p>
+                                        <p class="small text-muted mb-3" style="line-height: 1.6;">Head of Emergency Medicine &amp; Level-1 Trauma Centre. Specializes in cardiac arrest revival, polytrauma, and ICU stabilization.</p>
+                                        <div class="small text-muted mb-3 p-2 rounded" style="background-color: #F8FAFC; border-left: 3px solid #E63946;">
+                                            <div><strong>Duty Schedule:</strong> 24/7 Level-1 Trauma On-Call</div>
+                                            <div><strong>Unit:</strong> Emergency Entrance, Ground Floor</div>
+                                        </div>
+                                        <div class="mt-auto">
+                                            <a href="tel:+18009112273" class="btn btn-sm btn-outline-danger w-100 fw-bold">
+                                                <i class="fa fa-ambulance me-1"></i> Emergency Hotline (24/7)
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <t t-call="website_hospitality_luxe.s_appointment_bar"/>
+                <t t-call="website_hospitality_luxe.s_patient_faq"/>
+                <t t-call="website_hospitality_luxe.s_appointment_cta"/>
+            </div>
+        </t>
+    </template>
+
+    <!-- 3. Medical Departments & Centres of Excellence Page -->
+    <template id="departments" name="Clinical Departments - Hospital Care">
+        <t t-call="website.layout">
+            <div id="wrap" class="oe_structure oe_empty">
+                <!-- Page Hero -->
+                <section class="py-5 text-white text-center position-relative" style="background-color: #073B52; min-height: 320px; display: flex; align-items: center;">
+                    <img src="/website_hospitality_luxe/static/src/img/content/advanced_surgery.jpg" alt="Centres of Excellence" class="position-absolute top-0 start-0 w-100 h-100" style="object-fit: cover; filter: brightness(0.35);"/>
+                    <div class="position-absolute top-0 start-0 w-100 h-100" style="background: linear-gradient(135deg, rgba(7,59,82,0.85) 0%, rgba(11,79,108,0.7) 100%);"></div>
+                    <div class="container py-4 position-relative" style="z-index: 2;">
+                        <span class="med-badge-cyan mb-3 text-white" style="background-color: rgba(0,168,150,0.3); border-color: #00A896;">Specialized Care Units</span>
+                        <h1 class="display-4 fw-bold mb-3 text-white">Centres of Clinical Excellence</h1>
+                        <div class="med-divider"></div>
+                        <p class="lead mx-auto text-light" style="max-width: 700px;">Multidisciplinary super-specialty departments equipped with cutting-edge medical technology and dedicated intensive care units.</p>
+                    </div>
+                </section>
+
+                <t t-call="website_hospitality_luxe.s_departments_grid"/>
+                <t t-call="website_hospitality_luxe.s_services_facilities"/>
+                <t t-call="website_hospitality_luxe.s_accreditation_badges"/>
+                <t t-call="website_hospitality_luxe.s_appointment_bar"/>
+                <t t-call="website_hospitality_luxe.s_appointment_cta"/>
+            </div>
+        </t>
+    </template>
+
+    <!-- 4. Hospital Facilities & Infrastructure Page -->
+    <template id="facilities" name="Hospital Facilities - Hospital Care">
+        <t t-call="website.layout">
+            <div id="wrap" class="oe_structure oe_empty">
+                <!-- Page Hero -->
+                <section class="py-5 text-white text-center position-relative" style="background-color: #073B52; min-height: 320px; display: flex; align-items: center;">
+                    <img src="/website_hospitality_luxe/static/src/img/content/hospital_hero.jpg" alt="Hospital Infrastructure" class="position-absolute top-0 start-0 w-100 h-100" style="object-fit: cover; filter: brightness(0.35);"/>
+                    <div class="position-absolute top-0 start-0 w-100 h-100" style="background: linear-gradient(135deg, rgba(7,59,82,0.85) 0%, rgba(11,79,108,0.7) 100%);"></div>
+                    <div class="container py-4 position-relative" style="z-index: 2;">
+                        <span class="med-badge-cyan mb-3 text-white" style="background-color: rgba(0,168,150,0.3); border-color: #00A896;">Clinical Infrastructure</span>
+                        <h1 class="display-4 fw-bold mb-3 text-white">Advanced Medical Facilities</h1>
+                        <div class="med-divider"></div>
+                        <p class="lead mx-auto text-light" style="max-width: 700px;">World-class surgical suites, robotic consoles, 24/7 diagnostic labs, and comfort-driven inpatient recovery rooms.</p>
+                    </div>
+                </section>
+
+                <t t-call="website_hospitality_luxe.s_services_facilities"/>
+
+                <!-- Detailed Facility Showcase -->
+                <section class="py-5 bg-white">
+                    <div class="container py-4">
+                        <div class="row align-items-center g-5 mb-5">
+                            <div class="col-lg-6">
+                                <div class="position-relative rounded-4 overflow-hidden shadow">
+                                    <img src="/website_hospitality_luxe/static/src/img/content/facility_operation_theatre.jpg" alt="Modular Operation Theatres" class="w-100" style="min-height: 360px; object-fit: cover;"/>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <span class="med-badge-navy mb-3">Precision Surgery</span>
+                                <h2 class="h2 fw-bold mb-3" style="color: #0B4F6C;">Modular Operation Theatres with HEPA Laminar Flow</h2>
+                                <div class="med-divider-left"></div>
+                                <p class="text-muted mb-4" style="line-height: 1.8;">
+                                    Our 12 state-of-the-art modular operating theatres are engineered to international cleanroom standards with 0.3-micron HEPA filtration, positive pressure control, and integrated laparoscopic imaging towers to ensure near-zero surgical site infection rates.
+                                </p>
+                                <ul class="list-unstyled text-muted small d-flex flex-column gap-2 mb-4">
+                                    <li><i class="fa fa-check-circle text-success me-2"></i> Dedicated Robotic Surgery Suite (Da Vinci Xi)</li>
+                                    <li><i class="fa fa-check-circle text-success me-2"></i> Ultra-Clean Vertical Laminar Air Flow (Class 100)</li>
+                                    <li><i class="fa fa-check-circle text-success me-2"></i> Real-time Intraoperative Fluoroscopy &amp; C-Arm Imaging</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="row align-items-center g-5 flex-lg-row-reverse mb-5">
+                            <div class="col-lg-6">
+                                <div class="position-relative rounded-4 overflow-hidden shadow">
+                                    <img src="/website_hospitality_luxe/static/src/img/content/hospital_private_suite.jpg" alt="Private Patient Suites" class="w-100" style="min-height: 360px; object-fit: cover;"/>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <span class="med-badge-cyan mb-3">Healing Environment</span>
+                                <h2 class="h2 fw-bold mb-3" style="color: #0B4F6C;">Private Inpatient Recovery Suites</h2>
+                                <div class="med-divider-left"></div>
+                                <p class="text-muted mb-4" style="line-height: 1.8;">
+                                    Designed to feel like a haven of restorative peace, our private rooms provide ergonomic electric Fowler beds, nurse call buttons, accompanying attendant beds, en-suite bathrooms, and panoramic natural light.
+                                </p>
+                                <ul class="list-unstyled text-muted small d-flex flex-column gap-2 mb-4">
+                                    <li><i class="fa fa-check-circle text-success me-2"></i> 24/7 Dedicated Nursing Care &amp; Bedside Monitoring</li>
+                                    <li><i class="fa fa-check-circle text-success me-2"></i> Centralized Medical Oxygen &amp; Vacuum Ports</li>
+                                    <li><i class="fa fa-check-circle text-success me-2"></i> Personalized Clinical Dietary Meal Service</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <t t-call="website_hospitality_luxe.s_virtual_tour"/>
+                <t t-call="website_hospitality_luxe.s_appointment_bar"/>
+                <t t-call="website_hospitality_luxe.s_appointment_cta"/>
+            </div>
+        </t>
+    </template>
+
+    <!-- 5. About Us Page -->
+    <template id="about_us" name="About Us - Hospital Care">
+        <t t-call="website.layout">
+            <div id="wrap" class="oe_structure oe_empty">
+                <!-- Page Hero -->
+                <section class="py-5 text-white text-center position-relative" style="background-color: #073B52; min-height: 320px; display: flex; align-items: center;">
+                    <img src="/website_hospitality_luxe/static/src/img/content/facility_entrance.jpg" alt="About Hospital" class="position-absolute top-0 start-0 w-100 h-100" style="object-fit: cover; filter: brightness(0.35);"/>
+                    <div class="position-absolute top-0 start-0 w-100 h-100" style="background: linear-gradient(135deg, rgba(7,59,82,0.85) 0%, rgba(11,79,108,0.7) 100%);"></div>
+                    <div class="container py-4 position-relative" style="z-index: 2;">
+                        <span class="med-badge-cyan mb-3 text-white" style="background-color: rgba(0,168,150,0.3); border-color: #00A896;">Healing Heritage</span>
+                        <h1 class="display-4 fw-bold mb-3 text-white">Healing with Compassion, Leading with Science</h1>
+                        <div class="med-divider"></div>
+                        <p class="lead mx-auto text-light" style="max-width: 700px;">Over 25 years of tertiary healthcare excellence, patient safety benchmarks, and clinical research innovation.</p>
+                    </div>
+                </section>
+
+                <!-- Hospital Mission & Values -->
+                <section class="py-5 bg-white">
+                    <div class="container py-4">
+                        <div class="row g-5 align-items-center">
+                            <div class="col-lg-6">
+                                <span class="med-badge-navy mb-3">Our Mission &amp; Ethics</span>
+                                <h2 class="h2 fw-bold mb-3" style="color: #0B4F6C;">A Patient-First Philosophy Driven by Clinical Integrity</h2>
+                                <div class="med-divider-left"></div>
+                                <p class="text-muted mb-4" style="line-height: 1.8;">
+                                    Founded with the foundational vision that every human life deserves exceptional medical care, MediCare Hospital has evolved into an internationally recognized tertiary referral health center.
+                                </p>
+                                <div class="row g-3">
+                                    <div class="col-sm-6">
+                                        <div class="p-3 rounded-3" style="background: #F4F9F9; border-left: 3px solid #00A896;">
+                                            <h5 class="fw-bold mb-1" style="color: #0B4F6C; font-size: 1rem;"><i class="fa fa-heartbeat text-danger me-2"></i>Compassion</h5>
+                                            <p class="small text-muted mb-0">Empathy and respect at every point of the patient healing journey.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="p-3 rounded-3" style="background: #F4F9F9; border-left: 3px solid #0B4F6C;">
+                                            <h5 class="fw-bold mb-1" style="color: #0B4F6C; font-size: 1rem;"><i class="fa fa-stethoscope text-primary me-2"></i>Excellence</h5>
+                                            <p class="small text-muted mb-0">Adherence to strict global evidence-based medical treatment guidelines.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="position-relative rounded-4 overflow-hidden shadow">
+                                    <img src="/website_hospitality_luxe/static/src/img/content/facility_waiting_zone.jpg" alt="Hospital Reception" class="w-100" style="min-height: 380px; object-fit: cover;"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <t t-call="website_hospitality_luxe.s_hospital_stats"/>
+                <t t-call="website_hospitality_luxe.s_accreditation_badges"/>
+                <t t-call="website_hospitality_luxe.s_insurance_partners"/>
+                <t t-call="website_hospitality_luxe.s_appointment_cta"/>
+            </div>
+        </t>
+    </template>
+
+    <!-- 6. Patient & Visitor Guide Page -->
+    <template id="patient_guide" name="Patient Guide - Hospital Care">
+        <t t-call="website.layout">
+            <div id="wrap" class="oe_structure oe_empty">
+                <!-- Page Hero -->
+                <section class="py-5 text-white text-center position-relative" style="background-color: #073B52; min-height: 320px; display: flex; align-items: center;">
+                    <img src="/website_hospitality_luxe/static/src/img/content/hospital_private_suite.jpg" alt="Patient Guide" class="position-absolute top-0 start-0 w-100 h-100" style="object-fit: cover; filter: brightness(0.35);"/>
+                    <div class="position-absolute top-0 start-0 w-100 h-100" style="background: linear-gradient(135deg, rgba(7,59,82,0.85) 0%, rgba(11,79,108,0.7) 100%);"></div>
+                    <div class="container py-4 position-relative" style="z-index: 2;">
+                        <span class="med-badge-cyan mb-3 text-white" style="background-color: rgba(0,168,150,0.3); border-color: #00A896;">Care Guidelines</span>
+                        <h1 class="display-4 fw-bold mb-3 text-white">Patient &amp; Visitor Information Guide</h1>
+                        <div class="med-divider"></div>
+                        <p class="lead mx-auto text-light" style="max-width: 700px;">Everything you need to know about admission procedures, cashless insurance claims, visiting hours, and patient rights.</p>
+                    </div>
+                </section>
+
+                <!-- Information Grid -->
+                <section class="py-5 bg-white">
+                    <div class="container py-4">
+                        <div class="row g-4">
+                            <!-- Admission Procedure -->
+                            <div class="col-md-6 col-lg-4">
+                                <div class="p-4 rounded-3 h-100 border shadow-sm" style="border-top: 4px solid #00A896 !important; background-color: #FFFFFF;">
+                                    <div class="mb-3 fs-3" style="color: #00A896;">
+                                        <i class="fa fa-hospital-o"></i>
+                                    </div>
+                                    <h4 class="h5 fw-bold mb-3" style="color: #0B4F6C;">Admission Protocol</h4>
+                                    <p class="small text-muted mb-3" style="line-height: 1.7;">
+                                        Please bring a valid Government photo ID, doctor's admission recommendation note, insurance card, and relevant medical records.
+                                    </p>
+                                    <ul class="list-unstyled small text-muted d-flex flex-column gap-2 mb-0">
+                                        <li><strong>Planned Admission:</strong> Report to Admission Desk A by 09:00 AM</li>
+                                        <li><strong>Emergency Admission:</strong> 24/7 immediate triage at Trauma Bay</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- Visiting Hours -->
+                            <div class="col-md-6 col-lg-4">
+                                <div class="p-4 rounded-3 h-100 border shadow-sm" style="border-top: 4px solid #0B4F6C !important; background-color: #FFFFFF;">
+                                    <div class="mb-3 fs-3" style="color: #0B4F6C;">
+                                        <i class="fa fa-clock-o"></i>
+                                    </div>
+                                    <h4 class="h5 fw-bold mb-3" style="color: #0B4F6C;">Hospital Visiting Hours</h4>
+                                    <p class="small text-muted mb-3" style="line-height: 1.7;">
+                                        To maintain patient rest and sterility, only 1 visitor pass is permitted per patient during visiting hours.
+                                    </p>
+                                    <ul class="list-unstyled small text-muted d-flex flex-column gap-2 mb-0">
+                                        <li><strong>General / Private Wards:</strong> 04:00 PM – 07:00 PM Daily</li>
+                                        <li><strong>Intensive Care Units (ICU):</strong> 11:00 AM – 12:00 PM &amp; 05:00 PM – 06:00 PM</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- Cashless Insurance & TPA -->
+                            <div class="col-md-6 col-lg-4">
+                                <div class="p-4 rounded-3 h-100 border shadow-sm" style="border-top: 4px solid #E63946 !important; background-color: #FFFFFF;">
+                                    <div class="mb-3 fs-3" style="color: #E63946;">
+                                        <i class="fa fa-id-card-o"></i>
+                                    </div>
+                                    <h4 class="h5 fw-bold mb-3" style="color: #0B4F6C;">Cashless Mediclaim Desk</h4>
+                                    <p class="small text-muted mb-3" style="line-height: 1.7;">
+                                        Our dedicated TPA coordinator team assists with pre-authorization with 30+ leading health insurance providers.
+                                    </p>
+                                    <ul class="list-unstyled small text-muted d-flex flex-column gap-2 mb-0">
+                                        <li><strong>Desk Location:</strong> Ground Floor, Behind Main Reception</li>
+                                        <li><strong>Direct TPA Hotline:</strong> +1 (800) 555-INSUR</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <t t-call="website_hospitality_luxe.s_insurance_partners"/>
+                <t t-call="website_hospitality_luxe.s_patient_faq"/>
+                <t t-call="website_hospitality_luxe.s_appointment_cta"/>
+            </div>
+        </t>
+    </template>
+
+    <!-- 7. Hospital Gallery Page -->
+    <template id="gallery" name="Hospital Gallery - Hospital Care">
+        <t t-call="website.layout">
+            <div id="wrap" class="oe_structure oe_empty">
+                <!-- Page Hero -->
+                <section class="py-5 text-white text-center position-relative" style="background-color: #073B52; min-height: 320px; display: flex; align-items: center;">
+                    <img src="/website_hospitality_luxe/static/src/img/content/hospital_hero.jpg" alt="Hospital Photo Gallery" class="position-absolute top-0 start-0 w-100 h-100" style="object-fit: cover; filter: brightness(0.35);"/>
+                    <div class="position-absolute top-0 start-0 w-100 h-100" style="background: linear-gradient(135deg, rgba(7,59,82,0.85) 0%, rgba(11,79,108,0.7) 100%);"></div>
+                    <div class="container py-4 position-relative" style="z-index: 2;">
+                        <span class="med-badge-cyan mb-3 text-white" style="background-color: rgba(0,168,150,0.3); border-color: #00A896;">Visual Tour</span>
+                        <h1 class="display-4 fw-bold mb-3 text-white">Hospital Campus &amp; Clinical Facilities</h1>
+                        <div class="med-divider"></div>
+                        <p class="lead mx-auto text-light" style="max-width: 700px;">Take a photographic tour through our modern operating theatres, recovery suites, diagnostic centers, and campus.</p>
+                    </div>
+                </section>
+
+                <!-- Photo Masonry Section -->
+                <section class="py-5" style="background-color: #F4F9F9;">
+                    <div class="container py-3">
+                        <div class="row g-4">
+                            <div class="col-md-6 col-lg-4">
+                                <div class="rounded-3 overflow-hidden shadow-sm bg-white">
+                                    <img src="/website_hospitality_luxe/static/src/img/content/hospital_hero.jpg" alt="Hospital Campus" class="w-100" style="height: 260px; object-fit: cover;"/>
+                                    <div class="p-3">
+                                        <h5 class="h6 fw-bold mb-1" style="color: #0B4F6C;">500-Bed Tertiary Hospital Campus</h5>
+                                        <p class="small text-muted mb-0">Architectural glass campus with advanced helipad and emergency access.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="rounded-3 overflow-hidden shadow-sm bg-white">
+                                    <img src="/website_hospitality_luxe/static/src/img/content/advanced_surgery.jpg" alt="Robotic Surgery" class="w-100" style="height: 260px; object-fit: cover;"/>
+                                    <div class="p-3">
+                                        <h5 class="h6 fw-bold mb-1" style="color: #0B4F6C;">Da Vinci Xi Robotic Suite</h5>
+                                        <p class="small text-muted mb-0">High-precision 3D robotic consoles for minimally invasive procedures.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="rounded-3 overflow-hidden shadow-sm bg-white">
+                                    <img src="/website_hospitality_luxe/static/src/img/content/emergency_care.jpg" alt="Emergency Bay" class="w-100" style="height: 260px; object-fit: cover;"/>
+                                    <div class="p-3">
+                                        <h5 class="h6 fw-bold mb-1" style="color: #0B4F6C;">24/7 Emergency &amp; Trauma Bay</h5>
+                                        <p class="small text-muted mb-0">Immediate resuscitation bays with dedicated acute cardiac care.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="rounded-3 overflow-hidden shadow-sm bg-white">
+                                    <img src="/website_hospitality_luxe/static/src/img/content/facility_operation_theatre.jpg" alt="Operation Theatre" class="w-100" style="height: 260px; object-fit: cover;"/>
+                                    <div class="p-3">
+                                        <h5 class="h6 fw-bold mb-1" style="color: #0B4F6C;">Modular OT with Laminar Flow</h5>
+                                        <p class="small text-muted mb-0">Class-100 clean rooms with sterile air management.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="rounded-3 overflow-hidden shadow-sm bg-white">
+                                    <img src="/website_hospitality_luxe/static/src/img/content/hospital_private_suite.jpg" alt="Private Suite" class="w-100" style="height: 260px; object-fit: cover;"/>
+                                    <div class="p-3">
+                                        <h5 class="h6 fw-bold mb-1" style="color: #0B4F6C;">Deluxe Inpatient Patient Suite</h5>
+                                        <p class="small text-muted mb-0">Ergonomic recovery ward with dedicated companion amenities.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="rounded-3 overflow-hidden shadow-sm bg-white">
+                                    <img src="/website_hospitality_luxe/static/src/img/content/facility_waiting_zone.jpg" alt="Outpatient Lounge" class="w-100" style="height: 260px; object-fit: cover;"/>
+                                    <div class="p-3">
+                                        <h5 class="h6 fw-bold mb-1" style="color: #0B4F6C;">Central Patient Welcome Atrium</h5>
+                                        <p class="small text-muted mb-0">Comfortable air-conditioned lounge with digital queue tokens.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <t t-call="website_hospitality_luxe.s_virtual_tour"/>
+                <t t-call="website_hospitality_luxe.s_appointment_cta"/>
+            </div>
+        </t>
+    </template>
+
+    <!-- 8. Appointment Confirmation Result Page -->
+    <template id="booking_enquiry_result" name="Doctor Appointment Confirmation">
+        <t t-call="website.layout">
+            <div id="wrap" class="oe_structure oe_empty">
+                <section class="py-5" style="background-color: #F4F9F9; min-height: 60vh; display: flex; align-items: center;">
+                    <div class="container py-5 text-center">
+                        <div class="p-5 bg-white rounded-4 shadow-sm border mx-auto" style="max-width: 680px; border-color: rgba(0, 168, 150, 0.3) !important;">
+                            <t t-if="status == 'success'">
+                                <div class="mb-4" style="color: #00A896; font-size: 3.8rem;">
+                                    <i class="fa fa-check-circle"></i>
+                                </div>
+                                <span class="med-badge-cyan mb-3">Appointment Requested</span>
+                                <h1 class="h2 fw-bold mb-3" style="color: #0B4F6C;">
+                                    Your Doctor Appointment Request Has Been Received
+                                </h1>
+                                <div class="med-divider mb-4"></div>
+                                <p class="lead text-muted mb-4" style="font-size: 1.05rem;" t-out="message"/>
+                                <div class="alert alert-info text-start small mb-4">
+                                    <i class="fa fa-info-circle me-1"></i> Please arrive 15 minutes before your scheduled appointment time. Bring your photo ID and previous medical records or prescription history.
+                                </div>
+                                <div class="d-flex justify-content-center gap-3">
+                                    <a href="/" class="btn btn-med-cyan">Return to Home</a>
+                                    <a href="/doctors" class="btn btn-med-outline">Explore Doctors</a>
+                                </div>
+                            </t>
+                            <t t-else="">
+                                <div class="mb-4 text-danger" style="font-size: 3.8rem;">
+                                    <i class="fa fa-exclamation-circle"></i>
+                                </div>
+                                <span class="badge bg-danger text-white mb-3 px-3 py-2 text-uppercase" style="letter-spacing: 1px;">Attention Required</span>
+                                <h1 class="h2 fw-bold mb-3" style="color: #0B4F6C;">
+                                    Appointment Submission Incomplete
+                                </h1>
+                                <div class="med-divider mb-4"></div>
+                                <p class="lead text-muted mb-4" style="font-size: 1.05rem;" t-out="message"/>
+                                <div class="d-flex justify-content-center gap-3">
+                                    <a href="/#appointment_bar" class="btn btn-med-cyan">Try Again</a>
+                                    <a href="/" class="btn btn-med-outline">Return to Home</a>
+                                </div>
+                            </t>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </t>
+    </template>
+
+</odoo>

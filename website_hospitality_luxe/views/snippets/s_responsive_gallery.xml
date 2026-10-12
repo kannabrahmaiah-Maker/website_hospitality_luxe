@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<template id="s_responsive_gallery" name="Responsive Luxury Visual Gallery">
+    <section class="s_responsive_gallery py-5" style="background-color: #FAF7F2;" data-snippet="s_responsive_gallery" data-name="Responsive Luxury Visual Gallery">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <span class="luxe-badge-gold mb-2">Visual Splendor</span>
+                <h2 class="display-5 fw-bold mb-3" style="color: #172A28; font-family: var(--lux-font-heading);">
+                    The Luxe Gallery
+                </h2>
+                <div class="luxe-divider"></div>
+                <p class="text-muted lead mx-auto" style="max-width: 650px;">
+                    A glimpse into the serene landscapes, palatial architecture, and sublime guest experiences awaiting your arrival.
+                </p>
+            </div>
+            <div class="row g-3">
+                <div class="col-sm-6 col-lg-4">
+                    <div class="gallery-item">
+                        <img src="/website_hospitality_luxe/static/src/img/content/hero_resort.jpg" alt="Resort Twilight Infinity Pool"/>
+                        <div class="gallery-overlay">
+                            <span><i class="fa fa-search-plus me-2"></i>Twilight Infinity Pool</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="gallery-item">
+                        <img src="/website_hospitality_luxe/static/src/img/content/presidential_suite.jpg" alt="Presidential Oceanfront Penthouse"/>
+                        <div class="gallery-overlay">
+                            <span><i class="fa fa-search-plus me-2"></i>Presidential Penthouse</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="gallery-item">
+                        <img src="/website_hospitality_luxe/static/src/img/content/pool_villa.jpg" alt="Royal Beachfront Pool Villa"/>
+                        <div class="gallery-overlay">
+                            <span><i class="fa fa-search-plus me-2"></i>Private Pool Villa</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="gallery-item">
+                        <img src="/website_hospitality_luxe/static/src/img/content/fine_dining.jpg" alt="Michelin Star Candlelit Dining"/>
+                        <div class="gallery-overlay">
+                            <span><i class="fa fa-search-plus me-2"></i>Epicurean Fine Dining</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="gallery-item">
+                        <img src="/website_hospitality_luxe/static/src/img/content/spa_wellness.jpg" alt="Hydrotherapy Sanctuary Pool"/>
+                        <div class="gallery-overlay">
+                            <span><i class="fa fa-search-plus me-2"></i>Sanctuary Hydrotherapy</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="gallery-item">
+                        <img src="/website_hospitality_luxe/static/src/img/content/yacht_experience.jpg" alt="Private Luxury Yacht Charter"/>
+                        <div class="gallery-overlay">
+                            <span><i class="fa fa-search-plus me-2"></i>Private Yacht Charter</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <a href="/gallery" class="btn btn-outline-dark px-4 py-2" style="border-color: #172A28; color: #172A28; font-size: 0.85rem; letter-spacing: 1px; text-transform: uppercase;">View Complete Gallery</a>
+            </div>
+        </div>
+    </section>
+</template>
+</odoo>

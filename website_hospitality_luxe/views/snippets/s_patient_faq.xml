@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<template id="s_patient_faq" name="Patient &amp; Visitor FAQ">
+    <section class="s_patient_faq py-5" style="background-color: #FFFFFF;" data-snippet="s_patient_faq" data-name="Patient FAQ">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <span class="med-badge-navy mb-2">Helpful Information</span>
+                <h2 class="display-5 fw-bold mb-3" style="color: #0B4F6C;">Patient &amp; Visitor Guidelines</h2>
+                <div class="med-divider"></div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-9">
+                    <div class="accordion" id="hospitalFaqAccordion">
+                        <div class="accordion-item mb-3 border rounded">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button fw-bold text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                                    <i class="fa fa-question-circle text-primary me-2"></i> How do I book an OPD appointment with a specialist?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#hospitalFaqAccordion">
+                                <div class="accordion-body text-muted small">
+                                    You can easily book online through our Quick Appointment Bar, call our appointment desk at +1 (800) 911-CARE, or walk in directly to our OPD registration desk located on the Ground Floor.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item mb-3 border rounded">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed fw-bold text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                                    <i class="fa fa-clock-o text-primary me-2"></i> What are the inpatient visiting hours?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#hospitalFaqAccordion">
+                                <div class="accordion-body text-muted small">
+                                    General visiting hours are daily from 11:00 AM to 1:00 PM (Morning) and 5:00 PM to 7:00 PM (Evening). ICU visits are restricted to one immediate family member during designated 15-minute slots to maintain strict infection control.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item mb-3 border rounded">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed fw-bold text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                                    <i class="fa fa-file-text-o text-primary me-2"></i> What documents are required for cashless admission?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#hospitalFaqAccordion">
+                                <div class="accordion-body text-muted small">
+                                    Please bring your valid government photo ID, health insurance policy card / e-card, doctor's admission recommendation slip, and past medical diagnostic reports. Our 24/7 TPA insurance desk will process pre-authorization within 60 minutes.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</template>
+</odoo>

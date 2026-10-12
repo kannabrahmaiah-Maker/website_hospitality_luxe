@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_booking_bar" name="Booking Enquiry Bar">
+    <section class="s_booking_bar pt-0 pb-4" data-snippet="s_booking_bar" data-name="Booking Enquiry Bar">
+        <div class="container">
+            <div class="booking-panel">
+                <form action="/website_hospitality_luxe/enquiry/submit" method="POST" class="luxe-booking-form">
+                    <div class="row g-3 align-items-end">
+                        <div class="col-md-6 col-lg-3">
+                            <label><i class="fa fa-calendar me-1" style="color: #C5A46D;"></i> Check-In Date</label>
+                            <input type="date" name="checkin_date" class="form-control" required="required"/>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <label><i class="fa fa-calendar-check-o me-1" style="color: #C5A46D;"></i> Check-Out Date</label>
+                            <input type="date" name="checkout_date" class="form-control" required="required"/>
+                        </div>
+                        <div class="col-md-4 col-lg-2">
+                            <label><i class="fa fa-users me-1" style="color: #C5A46D;"></i> Guests</label>
+                            <select name="guests" class="form-select">
+                                <option value="1">1 Guest</option>
+                                <option value="2" selected="selected">2 Guests</option>
+                                <option value="3">3 Guests</option>
+                                <option value="4">4 Guests</option>
+                                <option value="5+">5+ Guests (Villa)</option>
+                            </select>
+                        </div>
+                        <div class="col-md-4 col-lg-2">
+                            <label><i class="fa fa-bed me-1" style="color: #C5A46D;"></i> Suite Category</label>
+                            <select name="room_type" class="form-select">
+                                <option value="Presidential Suite">Presidential Suite</option>
+                                <option value="Private Pool Villa">Private Pool Villa</option>
+                                <option value="Ocean Penthouse">Ocean Penthouse</option>
+                                <option value="Garden Deluxe">Garden Deluxe</option>
+                            </select>
+                        </div>
+                        <div class="col-md-4 col-lg-2">
+                            <input type="hidden" name="name" value="Quick Stay Inquiry"/>
+                            <input type="hidden" name="email" value="inquiry@hospitalityluxe.com"/>
+                            <button type="submit" class="btn btn-luxe-gold w-100">Reserve Stay</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</template>
+
+</odoo>

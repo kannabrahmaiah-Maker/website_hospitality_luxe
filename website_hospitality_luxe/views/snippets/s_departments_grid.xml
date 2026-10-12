@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<template id="s_departments_grid" name="Medical Departments Grid">
+    <section class="s_departments_grid py-5" style="background-color: #F4F9F9;" data-snippet="s_departments_grid" data-name="Medical Departments Grid">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <span class="med-badge-cyan mb-2">Centers of Excellence</span>
+                <h2 class="display-5 fw-bold mb-3" style="color: #0B4F6C;">Clinical Specialties &amp; Departments</h2>
+                <div class="med-divider"></div>
+                <p class="text-muted lead mx-auto" style="max-width: 650px;">
+                    Comprehensive specialized healthcare delivered with world-class technology and compassionate patient care.
+                </p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="dept-card">
+                        <div class="dept-icon red"><i class="fa fa-heartbeat"></i></div>
+                        <h3 class="h5 fw-bold mb-2">Cardiology &amp; Cardiac Surgery</h3>
+                        <p class="text-muted small mb-3">Comprehensive interventional cardiology, coronary angioplasty, heart failure clinic, and open heart surgeries.</p>
+                        <a href="/departments" class="text-decoration-none fw-semibold small" style="color: #00A896;">Explore Department →</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="dept-card">
+                        <div class="dept-icon blue"><i class="fa fa-user-md"></i></div>
+                        <h3 class="h5 fw-bold mb-2">Neurology &amp; Neurosurgery</h3>
+                        <p class="text-muted small mb-3">Advanced stroke care, spine surgery, epilepsy management, brain tumor resection, and neuro-rehabilitation.</p>
+                        <a href="/departments" class="text-decoration-none fw-semibold small" style="color: #00A896;">Explore Department →</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="dept-card">
+                        <div class="dept-icon teal"><i class="fa fa-wheelchair"></i></div>
+                        <h3 class="h5 fw-bold mb-2">Orthopedics &amp; Joint Replacement</h3>
+                        <p class="text-muted small mb-3">Computer-navigated total knee and hip replacements, sports injury arthroscopy, and complex trauma fractures.</p>
+                        <a href="/departments" class="text-decoration-none fw-semibold small" style="color: #00A896;">Explore Department →</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="dept-card">
+                        <div class="dept-icon amber"><i class="fa fa-child"></i></div>
+                        <h3 class="h5 fw-bold mb-2">Pediatrics &amp; Neonatology</h3>
+                        <p class="text-muted small mb-3">Level-III Neonatal ICU, pediatric surgery, developmental assessments, and child immunization clinics.</p>
+                        <a href="/departments" class="text-decoration-none fw-semibold small" style="color: #00A896;">Explore Department →</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="dept-card">
+                        <div class="dept-icon purple"><i class="fa fa-medkit"></i></div>
+                        <h3 class="h5 fw-bold mb-2">Medical &amp; Surgical Oncology</h3>
+                        <p class="text-muted small mb-3">Targeted cancer chemotherapy, immunotherapy, precision radiation planning, and tumor board reviews.</p>
+                        <a href="/departments" class="text-decoration-none fw-semibold small" style="color: #00A896;">Explore Department →</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="dept-card">
+                        <div class="dept-icon green"><i class="fa fa-stethoscope"></i></div>
+                        <h3 class="h5 fw-bold mb-2">Advanced Radiology &amp; MRI</h3>
+                        <p class="text-muted small mb-3">3T High-Field MRI, 128-slice dual energy CT scanner, digital mammography, and ultrasound elastography.</p>
+                        <a href="/departments" class="text-decoration-none fw-semibold small" style="color: #00A896;">Explore Department →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</template>
+</odoo>

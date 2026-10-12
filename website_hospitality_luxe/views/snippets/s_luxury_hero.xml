@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_luxury_hero" name="Luxury Hero Banner">
+    <section class="s_luxury_hero" data-snippet="s_luxury_hero" data-name="Luxury Hero Banner">
+        <img src="/website_hospitality_luxe/static/src/img/content/hero_resort.jpg" alt="Luxury Resort &amp; Oceanfront Villas" class="hero-bg"/>
+        <div class="hero-overlay"></div>
+        <div class="container hero-content text-center">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 col-xl-9">
+                    <span class="luxe-badge-gold mb-3">5-Star Luxury Resort &amp; Villas</span>
+                    <h1 class="display-3 fw-bold mb-4" style="color: #FFFFFF; font-family: var(--lux-font-heading);">
+                        Where Timeless Elegance Meets Serene Luxury
+                    </h1>
+                    <p class="lead mb-5 mx-auto" style="color: #E2E8F0; max-width: 720px; font-weight: 300; line-height: 1.7;">
+                        Discover secluded beachfront suites, private infinity plunge pools, holistic spa sanctuaries, and bespoke concierge hospitality crafted for discerning travelers.
+                    </p>
+                    <div class="d-flex flex-wrap justify-content-center gap-3">
+                        <a href="/rooms-suites" class="btn btn-luxe-gold shadow">Explore Suites &amp; Villas</a>
+                        <a href="/amenities-experiences" class="btn btn-luxe-outline">Discover Experiences</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</template>
+
+</odoo>

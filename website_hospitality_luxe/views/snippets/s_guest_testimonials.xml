@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<template id="s_guest_testimonials" name="Guest Accolades &amp; Reviews">
+    <section class="s_guest_testimonials py-5" style="background-color: #FAF7F2;" data-snippet="s_guest_testimonials" data-name="Guest Accolades &amp; Reviews">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <span class="luxe-badge-gold mb-2">Guest Accolades</span>
+                <h2 class="display-5 fw-bold mb-3" style="color: #172A28; font-family: var(--lux-font-heading);">
+                    Voices of Distinction
+                </h2>
+                <div class="luxe-divider"></div>
+                <p class="text-muted lead mx-auto" style="max-width: 650px;">
+                    Read reflections from guests who experienced the tranquility and warmth of our hospitality.
+                </p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="p-4 bg-white rounded-3 border h-100 d-flex flex-column shadow-sm">
+                        <div class="mb-3" style="color: #C5A46D; font-size: 0.95rem;">
+                            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                        </div>
+                        <p class="text-muted fst-italic flex-grow-1 mb-4" style="line-height: 1.7;">
+                            "An otherworldly sanctuary. The attention to detail from the private butler to the culinary creations exceeded every luxury standard we have experienced worldwide."
+                        </p>
+                        <div class="border-top pt-3 d-flex align-items-center">
+                            <div class="rounded-circle text-white d-flex align-items-center justify-content-center me-3" style="width: 44px; height: 44px; background-color: #172A28; font-weight: bold;">
+                                LH
+                            </div>
+                            <div>
+                                <h4 class="h6 fw-bold mb-0 text-dark">Lord &amp; Lady Harrington</h4>
+                                <small class="text-muted">London, United Kingdom • Stayed Penthouse</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-4 bg-white rounded-3 border h-100 d-flex flex-column shadow-sm">
+                        <div class="mb-3" style="color: #C5A46D; font-size: 0.95rem;">
+                            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                        </div>
+                        <p class="text-muted fst-italic flex-grow-1 mb-4" style="line-height: 1.7;">
+                            "The overwater pool villa offered absolute serenity. Waking up to unobstructed sunrises and dining under the stars was pure magic. We will return every winter."
+                        </p>
+                        <div class="border-top pt-3 d-flex align-items-center">
+                            <div class="rounded-circle text-white d-flex align-items-center justify-content-center me-3" style="width: 44px; height: 44px; background-color: #C5A46D; font-weight: bold;">
+                                SV
+                            </div>
+                            <div>
+                                <h4 class="h6 fw-bold mb-0 text-dark">Sophia &amp; Marcus Vance</h4>
+                                <small class="text-muted">Geneva, Switzerland • Stayed Pool Villa</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-4 bg-white rounded-3 border h-100 d-flex flex-column shadow-sm">
+                        <div class="mb-3" style="color: #C5A46D; font-size: 0.95rem;">
+                            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                        </div>
+                        <p class="text-muted fst-italic flex-grow-1 mb-4" style="line-height: 1.7;">
+                            "Undoubtedly one of the finest resorts on the planet. Seamless helipad transfers, Michelin-level degustation, and flawless discretion throughout our holiday."
+                        </p>
+                        <div class="border-top pt-3 d-flex align-items-center">
+                            <div class="rounded-circle text-white d-flex align-items-center justify-content-center me-3" style="width: 44px; height: 44px; background-color: #172A28; font-weight: bold;">
+                                AC
+                            </div>
+                            <div>
+                                <h4 class="h6 fw-bold mb-0 text-dark">Alexander Chen</h4>
+                                <small class="text-muted">Singapore • Executive Residence</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</template>
+</odoo>

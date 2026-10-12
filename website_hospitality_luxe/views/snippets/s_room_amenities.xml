@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<template id="s_room_amenities" name="Room Amenities &amp; Inclusions">
+    <section class="s_room_amenities py-5" style="background-color: #FFFFFF;" data-snippet="s_room_amenities" data-name="Room Amenities &amp; Inclusions">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <span class="luxe-badge-gold mb-2">Signature Comfort</span>
+                <h2 class="display-5 fw-bold mb-3" style="color: #172A28; font-family: var(--lux-font-heading);">
+                    In-Suite Amenities &amp; Inclusions
+                </h2>
+                <div class="luxe-divider"></div>
+                <p class="text-muted lead mx-auto" style="max-width: 650px;">
+                    Every villa and penthouse suite is appointed with world-class craftsmanship and thoughtful luxury touches.
+                </p>
+            </div>
+            <div class="row g-4">
+                <div class="col-sm-6 col-lg-3">
+                    <div class="p-4 h-100 rounded-3 text-center border" style="background-color: #FAF7F2; border-color: rgba(197, 164, 109, 0.25) !important;">
+                        <div class="mb-3" style="font-size: 2rem; color: #C5A46D;"><i class="fa fa-bed"></i></div>
+                        <h4 class="h5 fw-bold mb-2" style="color: #172A28;">King Beds &amp; Linens</h4>
+                        <p class="small text-muted mb-0">Handcrafted mattresses with 800-thread-count Egyptian cotton linens.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="p-4 h-100 rounded-3 text-center border" style="background-color: #FAF7F2; border-color: rgba(197, 164, 109, 0.25) !important;">
+                        <div class="mb-3" style="font-size: 2rem; color: #C5A46D;"><i class="fa fa-bell-o"></i></div>
+                        <h4 class="h5 fw-bold mb-2" style="color: #172A28;">24/7 Butler Service</h4>
+                        <p class="small text-muted mb-0">Dedicated personal butler at your disposal for seamless requests.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="p-4 h-100 rounded-3 text-center border" style="background-color: #FAF7F2; border-color: rgba(197, 164, 109, 0.25) !important;">
+                        <div class="mb-3" style="font-size: 2rem; color: #C5A46D;"><i class="fa fa-bath"></i></div>
+                        <h4 class="h5 fw-bold mb-2" style="color: #172A28;">Italian Marble Bath</h4>
+                        <p class="small text-muted mb-0">Deep soaking freestanding baths with Acqua di Parma amenities.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="p-4 h-100 rounded-3 text-center border" style="background-color: #FAF7F2; border-color: rgba(197, 164, 109, 0.25) !important;">
+                        <div class="mb-3" style="font-size: 2rem; color: #C5A46D;"><i class="fa fa-sun-o"></i></div>
+                        <h4 class="h5 fw-bold mb-2" style="color: #172A28;">Private Sun Terraces</h4>
+                        <p class="small text-muted mb-0">Expansive outdoor lounge spaces with panoramic ocean horizons.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="p-4 h-100 rounded-3 text-center border" style="background-color: #FAF7F2; border-color: rgba(197, 164, 109, 0.25) !important;">
+                        <div class="mb-3" style="font-size: 2rem; color: #C5A46D;"><i class="fa fa-coffee"></i></div>
+                        <h4 class="h5 fw-bold mb-2" style="color: #172A28;">Artisan Coffee &amp; Bar</h4>
+                        <p class="small text-muted mb-0">Nespresso Vertuo bar and sommelier-curated private wine cellar.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="p-4 h-100 rounded-3 text-center border" style="background-color: #FAF7F2; border-color: rgba(197, 164, 109, 0.25) !important;">
+                        <div class="mb-3" style="font-size: 2rem; color: #C5A46D;"><i class="fa fa-wifi"></i></div>
+                        <h4 class="h5 fw-bold mb-2" style="color: #172A28;">Starlink High-Speed</h4>
+                        <p class="small text-muted mb-0">Ultra-fast wireless connectivity available throughout all villas.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="p-4 h-100 rounded-3 text-center border" style="background-color: #FAF7F2; border-color: rgba(197, 164, 109, 0.25) !important;">
+                        <div class="mb-3" style="font-size: 2rem; color: #C5A46D;"><i class="fa fa-leaf"></i></div>
+                        <h4 class="h5 fw-bold mb-2" style="color: #172A28;">Pillow &amp; Scent Menu</h4>
+                        <p class="small text-muted mb-0">Personalized aromatherapy scents and organic goose down selection.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="p-4 h-100 rounded-3 text-center border" style="background-color: #FAF7F2; border-color: rgba(197, 164, 109, 0.25) !important;">
+                        <div class="mb-3" style="font-size: 2rem; color: #C5A46D;"><i class="fa fa-cutlery"></i></div>
+                        <h4 class="h5 fw-bold mb-2" style="color: #172A28;">In-Villa Dining</h4>
+                        <p class="small text-muted mb-0">24-hour gourmet dining served directly on your private deck.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</template>
+</odoo>

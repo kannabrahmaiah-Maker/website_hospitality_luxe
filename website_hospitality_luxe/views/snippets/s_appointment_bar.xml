@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<template id="s_appointment_bar" name="Quick Doctor Appointment Bar">
+    <section class="s_appointment_bar" id="appointment_bar" data-snippet="s_appointment_bar" data-name="Quick Doctor Appointment Bar">
+        <div class="container">
+            <div class="appointment-panel shadow-lg">
+                <div class="appointment-panel-header">
+                    <div class="d-flex align-items-center gap-2">
+                        <div class="rounded-circle d-flex align-items-center justify-content-center" style="width: 36px; height: 36px; background: rgba(0, 168, 150, 0.12); color: #00A896; font-size: 1.1rem;">
+                            <i class="fa fa-calendar-plus-o"></i>
+                        </div>
+                        <div>
+                            <h4 class="h5 fw-bold mb-0" style="color: #0B4F6C;">Book an In-Person Consultation</h4>
+                            <small class="text-muted">Choose your specialty and preferred doctor slot</small>
+                        </div>
+                    </div>
+                    <span class="badge bg-success-subtle text-success border border-success-subtle px-3 py-2 fw-semibold" style="font-size: 0.78rem;">
+                        <i class="fa fa-bolt me-1"></i> Instant Confirmation • No Waiting
+                    </span>
+                </div>
+
+                <form id="hospital_appointment_form" action="/website_hospital/appointment/submit" method="post">
+                    <div class="row g-3 align-items-end">
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <label><i class="fa fa-user me-1 text-info"></i> Patient Name</label>
+                            <input type="text" name="patient_name" class="form-control" placeholder="e.g. John Doe" required="required"/>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-2">
+                            <label><i class="fa fa-phone me-1 text-info"></i> Phone Number</label>
+                            <input type="tel" name="patient_phone" class="form-control" placeholder="+1 (555) 000-0000" required="required"/>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-2">
+                            <label><i class="fa fa-envelope me-1 text-info"></i> Email Address</label>
+                            <input type="email" name="patient_email" class="form-control" placeholder="name@email.com" required="required"/>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-2">
+                            <label><i class="fa fa-hospital-o me-1 text-info"></i> Department</label>
+                            <select name="department" class="form-select">
+                                <option value="Cardiology">Cardiology</option>
+                                <option value="Orthopedics">Orthopedics</option>
+                                <option value="Neurology">Neurology</option>
+                                <option value="Pediatrics">Pediatrics</option>
+                                <option value="Oncology">Oncology</option>
+                                <option value="General Medicine" selected="selected">General Medicine</option>
+                            </select>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-2">
+                            <label><i class="fa fa-calendar me-1 text-info"></i> Preferred Date</label>
+                            <input type="date" name="appointment_date" class="form-control" required="required"/>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-1">
+                            <button type="submit" class="btn btn-med-cyan w-100 p-2 d-flex align-items-center justify-content-center gap-1" title="Schedule Appointment" style="height: 44px;">
+                                <i class="fa fa-calendar-check-o"></i> <span>Book</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="appointment-feedback mt-3"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+</template>
+</odoo>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<template id="s_appointment_cta" name="Hospital Closing Appointment CTA">
+    <section class="s_appointment_cta py-5" style="background: linear-gradient(135deg, #072635 0%, #0B4F6C 100%); color: #FFFFFF;" data-snippet="s_appointment_cta" data-name="Closing Appointment CTA">
+        <div class="container py-5 text-center">
+            <span class="badge bg-info text-dark mb-3 px-3 py-1 fw-bold text-uppercase">YOUR HEALTH IS OUR PRIORITY</span>
+            <h2 class="display-4 fw-bold mb-3 text-white">
+                Schedule Your Consultation Today
+            </h2>
+            <div class="med-divider mb-4"></div>
+            <p class="lead mx-auto mb-4 text-light" style="max-width: 680px; font-size: 1.15rem; line-height: 1.8;">
+                Do not wait when it comes to your health. Book an appointment with our consultant physicians or call our clinical desk for guidance.
+            </p>
+            <div class="d-flex flex-wrap justify-content-center gap-3">
+                <a href="/contactus" class="btn btn-med-cyan px-4 py-3"><i class="fa fa-calendar-check-o me-2"></i>Book Doctor Appointment</a>
+                <a href="tel:18009112273" class="btn btn-med-alert px-4 py-3"><i class="fa fa-phone me-2"></i>24/7 Emergency Line</a>
+            </div>
+        </div>
+    </section>
+</template>
+</odoo>

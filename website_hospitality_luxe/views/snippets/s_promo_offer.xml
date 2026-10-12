@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<template id="s_promo_offer" name="Exclusive Seasonal Offer">
+    <section class="s_promo_offer py-5" style="background-color: #172A28; color: #FFFFFF;" data-snippet="s_promo_offer" data-name="Exclusive Seasonal Offer">
+        <div class="container py-4">
+            <div class="p-4 p-lg-5 rounded-4 border" style="background: linear-gradient(135deg, rgba(23,42,40,0.95) 0%, rgba(14,27,25,0.95) 100%); border-color: rgba(197, 164, 109, 0.4) !important;">
+                <div class="row align-items-center g-4">
+                    <div class="col-lg-8">
+                        <span class="luxe-badge-gold mb-3">Limited Seasonal Privileges</span>
+                        <h2 class="display-5 fw-bold mb-3" style="color: #FFFFFF; font-family: var(--lux-font-heading);">
+                            The Serenity Summer Escape
+                        </h2>
+                        <p class="lead text-light mb-4" style="max-width: 680px;">
+                            Reserve four consecutive nights in any luxury villa and receive a complimentary fourth night, sunset catamaran charter, and $250 sanctuary wellness credit.
+                        </p>
+                        <div class="row g-3 mb-4">
+                            <div class="col-sm-4">
+                                <div class="p-3 rounded bg-dark bg-opacity-50 border border-secondary text-center">
+                                    <div class="fw-bold" style="color: #C5A46D;">Complimentary Night</div>
+                                    <small class="text-muted">Stay 4, Pay 3</small>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="p-3 rounded bg-dark bg-opacity-50 border border-secondary text-center">
+                                    <div class="fw-bold" style="color: #C5A46D;">Catamaran Cruise</div>
+                                    <small class="text-muted">Included for 2 Guests</small>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="p-3 rounded bg-dark bg-opacity-50 border border-secondary text-center">
+                                    <div class="fw-bold" style="color: #C5A46D;">$250 Spa Credit</div>
+                                    <small class="text-muted">Applicable to all rituals</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 text-center text-lg-end">
+                        <div class="p-4 rounded-3 border bg-black bg-opacity-25" style="border-color: rgba(197, 164, 109, 0.3) !important;">
+                            <div class="small text-uppercase text-light mb-1" style="letter-spacing: 1px;">Exclusive Code</div>
+                            <div class="h3 fw-bold mb-3" style="color: #C5A46D; letter-spacing: 2px;">LUXE2026</div>
+                            <p class="small text-muted mb-3">Valid for stays booked directly through website.</p>
+                            <a href="/contactus?promo=LUXE2026" class="btn btn-luxe-gold w-100">Claim This Offer</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</template>
+</odoo>

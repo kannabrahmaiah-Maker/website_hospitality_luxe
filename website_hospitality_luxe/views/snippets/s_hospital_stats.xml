@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<template id="s_hospital_stats" name="Hospital Milestones &amp; Stats">
+    <section class="s_hospital_stats py-5" style="background-color: #0B4F6C; color: #FFFFFF;" data-snippet="s_hospital_stats" data-name="Hospital Milestones &amp; Stats">
+        <div class="container py-4">
+            <div class="row g-4 text-center">
+                <div class="col-6 col-lg-3">
+                    <div class="p-3">
+                        <div class="display-4 fw-bold mb-1" style="color: #00A896;">500+</div>
+                        <div class="text-uppercase fw-semibold mb-1 small text-light" style="letter-spacing: 1px;">Inpatient Beds</div>
+                        <p class="small text-light text-opacity-75 mb-0">Private suites, multi-bed wards &amp; ICU units.</p>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <div class="p-3">
+                        <div class="display-4 fw-bold mb-1" style="color: #00A896;">120+</div>
+                        <div class="text-uppercase fw-semibold mb-1 small text-light" style="letter-spacing: 1px;">Specialist Doctors</div>
+                        <p class="small text-light text-opacity-75 mb-0">Board-certified consultants across 35 specialties.</p>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <div class="p-3">
+                        <div class="display-4 fw-bold mb-1" style="color: #00A896;">25,000+</div>
+                        <div class="text-uppercase fw-semibold mb-1 small text-light" style="letter-spacing: 1px;">Surgeries Completed</div>
+                        <p class="small text-light text-opacity-75 mb-0">High-complexity cardiac, neuro &amp; ortho procedures.</p>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <div class="p-3">
+                        <div class="display-4 fw-bold mb-1" style="color: #00A896;">99.8%</div>
+                        <div class="text-uppercase fw-semibold mb-1 small text-light" style="letter-spacing: 1px;">Recovery Rate</div>
+                        <p class="small text-light text-opacity-75 mb-0">Consistent patient satisfaction &amp; safety record.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</template>
+</odoo>

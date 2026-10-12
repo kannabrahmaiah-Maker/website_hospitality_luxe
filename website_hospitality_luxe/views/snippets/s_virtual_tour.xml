@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<template id="s_virtual_tour" name="Medical Facilities Virtual Tour">
+    <section class="s_virtual_tour py-5" style="background-color: #FFFFFF;" data-snippet="s_virtual_tour" data-name="Facilities Virtual Tour">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <span class="med-badge-cyan mb-2">Hospital Tour</span>
+                <h2 class="display-5 fw-bold mb-3" style="color: #0B4F6C;">World-Class Hospital Campus</h2>
+                <div class="med-divider"></div>
+                <p class="text-muted lead mx-auto" style="max-width: 650px;">
+                    Take a virtual tour of our clean, sterile clinical environments, modern diagnostic suites, and patient recovery facilities.
+                </p>
+            </div>
+            <div class="row g-3">
+                <div class="col-sm-6 col-lg-4">
+                    <div class="rounded-3 overflow-hidden border shadow-sm" style="height: 240px;">
+                        <img src="/website_hospitality_luxe/static/src/img/content/hospital_hero.jpg" alt="Hospital Main Campus Entrance" class="w-100 h-100" style="object-fit: cover;"/>
+                    </div>
+                    <div class="small fw-bold text-center mt-2 text-dark">Main Hospital Campus &amp; OPD Entrance</div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="rounded-3 overflow-hidden border shadow-sm" style="height: 240px;">
+                        <img src="/website_hospitality_luxe/static/src/img/content/advanced_surgery.jpg" alt="Robotic Surgery Operating Theatre" class="w-100 h-100" style="object-fit: cover;"/>
+                    </div>
+                    <div class="small fw-bold text-center mt-2 text-dark">Robotic Laparoscopy Operating Theatre</div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="rounded-3 overflow-hidden border shadow-sm" style="height: 240px;">
+                        <img src="/website_hospitality_luxe/static/src/img/content/doctor_consultation.jpg" alt="Outpatient Consultation Clinic" class="w-100 h-100" style="object-fit: cover;"/>
+                    </div>
+                    <div class="small fw-bold text-center mt-2 text-dark">Senior Consultant Examination Suite</div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="rounded-3 overflow-hidden border shadow-sm" style="height: 240px;">
+                        <img src="/website_hospitality_luxe/static/src/img/content/hospital_private_suite.jpg" alt="Private Inpatient Recovery Ward" class="w-100 h-100" style="object-fit: cover;"/>
+                    </div>
+                    <div class="small fw-bold text-center mt-2 text-dark">Deluxe Private Patient Recovery Suite</div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="rounded-3 overflow-hidden border shadow-sm" style="height: 240px;">
+                        <img src="/website_hospitality_luxe/static/src/img/content/facility_operation_theatre.jpg" alt="Cardiac Cath Lab" class="w-100 h-100" style="object-fit: cover;"/>
+                    </div>
+                    <div class="small fw-bold text-center mt-2 text-dark">Modular Operation Theatre Suite</div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="rounded-3 overflow-hidden border shadow-sm" style="height: 240px;">
+                        <img src="/website_hospitality_luxe/static/src/img/content/emergency_care.jpg" alt="24/7 Emergency Department" class="w-100 h-100" style="object-fit: cover;"/>
+                    </div>
+                    <div class="small fw-bold text-center mt-2 text-dark">24/7 Level-1 Trauma Emergency Bay</div>
+                </div>
+            </div>
+        </div>
+    </section>
+</template>
+</odoo>

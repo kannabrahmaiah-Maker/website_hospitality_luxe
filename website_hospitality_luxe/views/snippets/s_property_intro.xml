@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_property_intro" name="About and Property Introduction">
+    <section class="s_property_intro py-5 bg-white" data-snippet="s_property_intro" data-name="About and Property Introduction">
+        <div class="container py-4">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <div class="position-relative">
+                        <img src="/website_hospitality_luxe/static/src/img/content/resort_exterior.jpg" alt="Grand Luxury Palace Resort" class="img-fluid rounded-3 shadow-lg w-100" style="height: 480px; object-fit: cover;"/>
+                        <div class="position-absolute bottom-0 start-0 m-4 p-3 rounded-2 text-white shadow" style="background: rgba(23, 42, 40, 0.92); border-left: 3px solid #C5A46D; max-width: 260px;">
+                            <div class="h5 fw-bold mb-1" style="color: #C5A46D;">Est. 1928</div>
+                            <div class="small text-light">A Century of Unrivaled Bespoke Hospitality</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <span class="luxe-badge-gold mb-2">Welcome to Luxe Sanctuary</span>
+                    <h2 class="display-5 fw-bold mb-3" style="color: #172A28; font-family: var(--lux-font-heading);">
+                        An Oasis of Uncompromised Splendor &amp; Tranquility
+                    </h2>
+                    <div class="luxe-divider-left"></div>
+                    <p class="text-muted lead mb-4">
+                        Nestled along pristine private coastlines, our estate offers refined architectural majesty harmonized with lush tropical flora.
+                    </p>
+                    <p class="text-secondary mb-4" style="line-height: 1.8;">
+                        Every suite is an enclave of discreet luxury, complete with dedicated personal butlers, bespoke dining privileges, and private ocean access. Whether unwinding in your private thermal plunge pool or embarking on a private yacht charter, your stay is elevated beyond the ordinary.
+                    </p>
+                    <div class="row g-3 mb-4">
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center">
+                                <i class="fa fa-check-circle fa-lg me-2" style="color: #C5A46D;"></i>
+                                <span class="fw-bold" style="color: #172A28;">24/7 Personal Butler</span>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center">
+                                <i class="fa fa-check-circle fa-lg me-2" style="color: #C5A46D;"></i>
+                                <span class="fw-bold" style="color: #172A28;">Private Beach Access</span>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center">
+                                <i class="fa fa-check-circle fa-lg me-2" style="color: #C5A46D;"></i>
+                                <span class="fw-bold" style="color: #172A28;">Michelin-Starred Dining</span>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center">
+                                <i class="fa fa-check-circle fa-lg me-2" style="color: #C5A46D;"></i>
+                                <span class="fw-bold" style="color: #172A28;">Holistic Spa &amp; Wellness</span>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="/about-us" class="btn btn-luxe-gold">Read Our Heritage &amp; Story &amp;rarr;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</template>
+
+</odoo>

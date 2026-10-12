@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<template id="s_experiences_cards" name="Curated Guest Experiences">
+    <section class="s_experiences_cards py-5" style="background-color: #FFFFFF;" data-snippet="s_experiences_cards" data-name="Curated Guest Experiences">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <span class="luxe-badge-gold mb-2">Unforgettable Memories</span>
+                <h2 class="display-5 fw-bold mb-3" style="color: #172A28; font-family: var(--lux-font-heading);">
+                    Curated Resort Experiences
+                </h2>
+                <div class="luxe-divider"></div>
+                <p class="text-muted lead mx-auto" style="max-width: 650px;">
+                    Immerse yourself in authentic coastal elegance, private open-ocean voyages, and transcendent wellness sanctuaries.
+                </p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="experience-card">
+                        <img src="/website_hospitality_luxe/static/src/img/content/yacht_experience.jpg" alt="Private Yacht Charter at Sunset"/>
+                        <div class="experience-overlay">
+                            <span class="badge bg-warning text-dark mb-2 align-self-start" style="font-size: 0.72rem; letter-spacing: 1px;">PRIVATE EXPEDITION</span>
+                            <h3 class="h4 fw-bold mb-1" style="color: #FFFFFF;">Sunset Catamaran Cruise</h3>
+                            <p class="small text-light mb-3">Sail into the twilight with vintage champagne and private oyster tasting.</p>
+                            <a href="/contactus?exp=Sunset+Catamaran" class="btn btn-sm btn-luxe-gold align-self-start">Reserve Journey</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="experience-card">
+                        <img src="/website_hospitality_luxe/static/src/img/content/spa_wellness.jpg" alt="Holistic Hydrotherapy Sanctuary"/>
+                        <div class="experience-overlay">
+                            <span class="badge bg-warning text-dark mb-2 align-self-start" style="font-size: 0.72rem; letter-spacing: 1px;">WELLNESS &amp; RETREAT</span>
+                            <h3 class="h4 fw-bold mb-1" style="color: #FFFFFF;">Hydrotherapy Rituals</h3>
+                            <p class="small text-light mb-3">Mineral stone baths, herbal steam pavilions, and bespoke deep tissue therapy.</p>
+                            <a href="/contactus?exp=Hydrotherapy+Rituals" class="btn btn-sm btn-luxe-gold align-self-start">Reserve Journey</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="experience-card">
+                        <img src="/website_hospitality_luxe/static/src/img/content/fine_dining.jpg" alt="Candlelit Gourmet Ocean Dining"/>
+                        <div class="experience-overlay">
+                            <span class="badge bg-warning text-dark mb-2 align-self-start" style="font-size: 0.72rem; letter-spacing: 1px;">EPICUREAN DELIGHT</span>
+                            <h3 class="h4 fw-bold mb-1" style="color: #FFFFFF;">Overwater Candlelit Dinner</h3>
+                            <p class="small text-light mb-3">Seven-course chef tasting menu under the canopy of starlight.</p>
+                            <a href="/contactus?exp=Overwater+Dining" class="btn btn-sm btn-luxe-gold align-self-start">Reserve Journey</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</template>
+</odoo>

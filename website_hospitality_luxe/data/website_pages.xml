@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="0">
+        <record id="page_about_us" model="website.page">
+            <field name="name">About Us</field>
+            <field name="url">/about-us</field>
+            <field name="view_id" ref="website_hospitality_luxe.about_us"/>
+            <field name="is_published">True</field>
+            <field name="track">True</field>
+            <field name="website_meta_description">Learn about MediCare Hospital, JCI and NABH accredited tertiary medical center.</field>
+        </record>
+
+        <record id="page_doctors" model="website.page">
+            <field name="name">Doctors</field>
+            <field name="url">/doctors</field>
+            <field name="view_id" ref="website_hospitality_luxe.doctors"/>
+            <field name="is_published">True</field>
+            <field name="track">True</field>
+            <field name="website_meta_description">Find expert doctors, surgeons and clinical specialists at MediCare Hospital.</field>
+        </record>
+
+        <record id="page_departments" model="website.page">
+            <field name="name">Departments</field>
+            <field name="url">/departments</field>
+            <field name="view_id" ref="website_hospitality_luxe.departments"/>
+            <field name="is_published">True</field>
+            <field name="track">True</field>
+            <field name="website_meta_description">Explore our Centres of Clinical Excellence: Cardiology, Neurology, Orthopedics, Pediatrics, Oncology.</field>
+        </record>
+
+        <record id="page_facilities" model="website.page">
+            <field name="name">Facilities</field>
+            <field name="url">/facilities</field>
+            <field name="view_id" ref="website_hospitality_luxe.facilities"/>
+            <field name="is_published">True</field>
+            <field name="track">True</field>
+            <field name="website_meta_description">State-of-the-art robotic surgery, modular operation theatres, and 24/7 emergency trauma care.</field>
+        </record>
+
+        <record id="page_patient_guide" model="website.page">
+            <field name="name">Patient Guide</field>
+            <field name="url">/patient-guide</field>
+            <field name="view_id" ref="website_hospitality_luxe.patient_guide"/>
+            <field name="is_published">True</field>
+            <field name="track">True</field>
+            <field name="website_meta_description">Patient admission guidelines, cashless insurance TPA network, and hospital visiting hours.</field>
+        </record>
+
+        <record id="page_gallery" model="website.page">
+            <field name="name">Gallery</field>
+            <field name="url">/gallery</field>
+            <field name="view_id" ref="website_hospitality_luxe.gallery"/>
+            <field name="is_published">True</field>
+            <field name="track">True</field>
+            <field name="website_meta_description">Visual tour of MediCare Hospital infrastructure, intensive care units, and patient recovery suites.</field>
+        </record>
+    </data>
+</odoo>

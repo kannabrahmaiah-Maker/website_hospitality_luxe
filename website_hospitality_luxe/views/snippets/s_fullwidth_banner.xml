@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<template id="s_fullwidth_banner" name="Fullwidth Luxury Invitation Banner">
+    <section class="s_fullwidth_banner py-5 position-relative text-white text-center" style="min-height: 480px; display: flex; align-items: center; overflow: hidden;" data-snippet="s_fullwidth_banner" data-name="Fullwidth Luxury Invitation Banner">
+        <img src="/website_hospitality_luxe/static/src/img/content/resort_exterior.jpg" alt="Palatial Hotel Twilight Panorama" class="position-absolute top-0 start-0 w-100 h-100" style="object-fit: cover; z-index: 1; filter: brightness(0.7);"/>
+        <div class="position-absolute top-0 start-0 w-100 h-100" style="background: linear-gradient(180deg, rgba(23,42,40,0.6) 0%, rgba(14,27,25,0.85) 100%); z-index: 2;"></div>
+        <div class="container py-5 position-relative" style="z-index: 3;">
+            <div class="row justify-content-center">
+                <div class="col-lg-9">
+                    <span class="luxe-badge-gold mb-3">An Unrivaled Escape</span>
+                    <h2 class="display-4 fw-bold mb-3" style="font-family: var(--lux-font-heading); letter-spacing: -0.5px;">
+                        Where Architectural Grandeur Meets Timeless Seclusion
+                    </h2>
+                    <div class="luxe-divider mb-4"></div>
+                    <p class="lead mb-4 mx-auto text-light" style="max-width: 720px; font-size: 1.15rem; line-height: 1.8;">
+                        Discover a world sculpted for the discerning traveler. Indulge in private infinity pools, curated gastronomic journeys, and personalized royal hospitality.
+                    </p>
+                    <div class="d-flex flex-wrap justify-content-center gap-3">
+                        <a href="/rooms-suites" class="btn btn-luxe-gold">Explore Suites &amp; Villas</a>
+                        <a href="/contactus" class="btn btn-luxe-white">Connect With Concierge</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</template>
+</odoo>

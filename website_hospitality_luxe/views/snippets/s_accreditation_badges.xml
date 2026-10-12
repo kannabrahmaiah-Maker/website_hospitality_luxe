@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<template id="s_accreditation_badges" name="Hospital Accreditations &amp; Quality">
+    <section class="s_accreditation_badges py-4" style="background-color: #F4F9F9; border-top: 1px solid #E2E8F0; border-bottom: 1px solid #E2E8F0;" data-snippet="s_accreditation_badges" data-name="Hospital Accreditations">
+        <div class="container text-center">
+            <span class="small fw-bold text-uppercase text-muted mb-3 d-block" style="letter-spacing: 1.5px;">Accredited for Global Clinical Safety &amp; Quality Standards</span>
+            <div class="row align-items-center justify-content-center g-4">
+                <div class="col-6 col-md-3">
+                    <div class="p-3 bg-white rounded border shadow-sm">
+                        <i class="fa fa-shield fs-3 mb-2" style="color: #0B4F6C;"></i>
+                        <h4 class="h6 fw-bold mb-0">JCI Accredited</h4>
+                        <small class="text-muted">Joint Commission Int'l</small>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="p-3 bg-white rounded border shadow-sm">
+                        <i class="fa fa-certificate fs-3 mb-2" style="color: #00A896;"></i>
+                        <h4 class="h6 fw-bold mb-0">NABH Certified</h4>
+                        <small class="text-muted">National Hospital Board</small>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="p-3 bg-white rounded border shadow-sm">
+                        <i class="fa fa-flask fs-3 mb-2" style="color: #0B4F6C;"></i>
+                        <h4 class="h6 fw-bold mb-0">NABL Laboratory</h4>
+                        <small class="text-muted">ISO 15189 Certified</small>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="p-3 bg-white rounded border shadow-sm">
+                        <i class="fa fa-check-circle fs-3 mb-2" style="color: #00A896;"></i>
+                        <h4 class="h6 fw-bold mb-0">ISO 9001:2015</h4>
+                        <small class="text-muted">Healthcare Quality System</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</template>
+</odoo>

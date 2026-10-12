@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<template id="s_hospitality_stats" name="Hospitality Milestones &amp; Stats">
+    <section class="s_hospitality_stats py-5" style="background-color: #172A28; color: #FFFFFF;" data-snippet="s_hospitality_stats" data-name="Hospitality Milestones &amp; Stats">
+        <div class="container py-4">
+            <div class="row g-4 text-center">
+                <div class="col-6 col-lg-3">
+                    <div class="p-3">
+                        <div class="display-4 fw-bold mb-1" style="color: #C5A46D; font-family: var(--lux-font-heading);">5-Star</div>
+                        <div class="text-uppercase fw-semibold mb-1" style="font-size: 0.85rem; letter-spacing: 1.5px; color: #E2E8F0;">Forbes Distinction</div>
+                        <p class="small text-muted mb-0">Recognized among the globe's finest resorts.</p>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <div class="p-3">
+                        <div class="display-4 fw-bold mb-1" style="color: #C5A46D; font-family: var(--lux-font-heading);">48</div>
+                        <div class="text-uppercase fw-semibold mb-1" style="font-size: 0.85rem; letter-spacing: 1.5px; color: #E2E8F0;">Exclusive Villas</div>
+                        <p class="small text-muted mb-0">Secluded oceanfront suites and residences.</p>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <div class="p-3">
+                        <div class="display-4 fw-bold mb-1" style="color: #C5A46D; font-family: var(--lux-font-heading);">3</div>
+                        <div class="text-uppercase fw-semibold mb-1" style="font-size: 0.85rem; letter-spacing: 1.5px; color: #E2E8F0;">Michelin Venues</div>
+                        <p class="small text-muted mb-0">Curated by world-renowned executive chefs.</p>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <div class="p-3">
+                        <div class="display-4 fw-bold mb-1" style="color: #C5A46D; font-family: var(--lux-font-heading);">99.4%</div>
+                        <div class="text-uppercase fw-semibold mb-1" style="font-size: 0.85rem; letter-spacing: 1.5px; color: #E2E8F0;">Guest Approval</div>
+                        <p class="small text-muted mb-0">Verified return and recommendation score.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</template>
+</odoo>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Add Hospital Care Emergency Hotline & Appointment CTA in Navbar -->
+    <template id="header_call_to_action" inherit_id="website.template_header_default" name="Hospital Care Navbar CTAs">
+        <xpath expr="//ul[hasclass('navbar-nav') and hasclass('justify-content-end')]" position="inside">
+            <li class="nav-item d-none d-xl-flex align-items-center">
+                <a href="tel:+18009112273" class="badge text-white px-3 py-2 text-decoration-none d-flex align-items-center gap-2 shadow-sm" style="background-color: #E63946; font-size: 0.8rem; border-radius: 20px; font-weight: 700; letter-spacing: 0.5px;">
+                    <i class="fa fa-ambulance"></i>
+                    <span>24/7 ER: (800) 911-CARE</span>
+                </a>
+            </li>
+            <li class="nav-item d-none d-sm-block">
+                <a href="/#appointment_bar" class="btn btn-sm btn-med-cyan text-white ms-2 px-3 py-2 fw-semibold shadow-sm" style="letter-spacing: 0.5px; border-radius: 6px;">
+                    <i class="fa fa-calendar-plus-o me-1"></i> Book Appointment
+                </a>
+            </li>
+        </xpath>
+    </template>
+</odoo>

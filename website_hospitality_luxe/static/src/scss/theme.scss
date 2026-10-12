@@ -1,0 +1,580 @@
+/* ==========================================================================
+   website_hospital_luxe / Healthcare & Hospital Design System
+   Clinical Palette:
+     $med-navy:       #0B4F6C (Authoritative Trust Navy)
+     $med-navy-dark:  #073B52
+     $med-cyan:       #00A896 (Healthcare & Vitality Cyan)
+     $med-cyan-dark:  #028090
+     $med-cyan-light: #E6F7F5
+     $med-ice:        #F4F9F9 (Sterile Soft Ice)
+     $med-alert:      #E63946 (Emergency 24/7 Red)
+     $med-text:       #1E293B
+     $med-white:      #FFFFFF
+   ========================================================================== */
+
+:root {
+  --med-navy: #0B4F6C;
+  --med-navy-dark: #073B52;
+  --med-cyan: #00A896;
+  --med-cyan-dark: #028090;
+  --med-cyan-light: #E6F7F5;
+  --med-ice: #F4F9F9;
+  --med-alert: #E63946;
+  --med-text: #1E293B;
+  --med-white: #FFFFFF;
+  --med-font: -apple-system, BlinkMacSystemFont, 'Plus Jakarta Sans', 'Segoe UI', Roboto, sans-serif;
+}
+
+body {
+  font-family: var(--med-font);
+  color: var(--med-text);
+  background-color: #FFFFFF;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--med-font);
+  color: var(--med-navy);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+/* Clinical Badges & Accents */
+.med-hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(0, 168, 150, 0.22);
+  border: 1px solid #00A896;
+  color: #FFFFFF;
+  padding: 6px 18px;
+  border-radius: 30px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 1.25rem;
+  box-shadow: 0 0 20px rgba(0, 168, 150, 0.25);
+  backdrop-filter: blur(6px);
+}
+
+.pulse-indicator {
+  width: 9px;
+  height: 9px;
+  background-color: #48E5C2;
+  border-radius: 50%;
+  display: inline-block;
+  box-shadow: 0 0 0 0 rgba(72, 229, 194, 0.7);
+  animation: pulse-ring 1.8s infinite;
+}
+
+@keyframes pulse-ring {
+  0% { box-shadow: 0 0 0 0 rgba(72, 229, 194, 0.7); }
+  70% { box-shadow: 0 0 0 8px rgba(72, 229, 194, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(72, 229, 194, 0); }
+}
+
+.med-badge-cyan {
+  display: inline-block;
+  background-color: rgba(0, 168, 150, 0.12);
+  color: var(--med-cyan-dark);
+  border: 1px solid rgba(0, 168, 150, 0.35);
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  padding: 6px 16px;
+  border-radius: 30px;
+}
+
+.med-badge-navy {
+  display: inline-block;
+  background-color: rgba(11, 79, 108, 0.1);
+  color: var(--med-navy);
+  border: 1px solid rgba(11, 79, 108, 0.25);
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  padding: 6px 16px;
+  border-radius: 30px;
+}
+
+.med-badge-alert {
+  display: inline-block;
+  background-color: var(--med-alert);
+  color: #FFFFFF;
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  padding: 6px 16px;
+  border-radius: 30px;
+}
+
+.med-divider {
+  width: 50px;
+  height: 3px;
+  background: var(--med-cyan);
+  margin: 1.25rem auto;
+  border-radius: 2px;
+}
+
+.med-divider-left {
+  width: 50px;
+  height: 3px;
+  background: var(--med-cyan);
+  margin: 1rem 0 1.5rem 0;
+  border-radius: 2px;
+}
+
+/* Medical Buttons */
+.btn-med-cyan {
+  background-color: var(--med-cyan);
+  color: #FFFFFF !important;
+  border: 1px solid var(--med-cyan);
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  padding: 12px 28px;
+  border-radius: 6px;
+  transition: all 0.25s ease;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.btn-med-cyan:hover {
+  background-color: var(--med-cyan-dark);
+  border-color: var(--med-cyan-dark);
+  color: #FFFFFF !important;
+  box-shadow: 0 6px 20px rgba(0, 168, 150, 0.3);
+  transform: translateY(-2px);
+}
+
+.btn-med-alert {
+  background-color: var(--med-alert);
+  color: #FFFFFF !important;
+  border: 1px solid var(--med-alert);
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  padding: 12px 28px;
+  border-radius: 6px;
+  transition: all 0.25s ease;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.btn-med-alert:hover {
+  background-color: #C92A37;
+  border-color: #C92A37;
+  color: #FFFFFF !important;
+  box-shadow: 0 6px 20px rgba(230, 57, 70, 0.35);
+  transform: translateY(-2px);
+}
+
+.btn-med-navy {
+  background-color: var(--med-navy);
+  color: #FFFFFF !important;
+  border: 1px solid var(--med-navy);
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  padding: 12px 28px;
+  border-radius: 6px;
+  transition: all 0.25s ease;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.btn-med-navy:hover {
+  background-color: var(--med-navy-dark);
+  border-color: var(--med-navy-dark);
+  color: #FFFFFF !important;
+  box-shadow: 0 6px 20px rgba(11, 79, 108, 0.3);
+  transform: translateY(-2px);
+}
+
+.btn-med-outline {
+  background-color: transparent;
+  color: var(--med-navy) !important;
+  border: 2px solid var(--med-navy);
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  padding: 11px 26px;
+  border-radius: 6px;
+  transition: all 0.25s ease;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.btn-med-outline:hover {
+  background-color: var(--med-navy);
+  color: #FFFFFF !important;
+  box-shadow: 0 6px 20px rgba(11, 79, 108, 0.2);
+  transform: translateY(-2px);
+}
+
+/* 1. Hospital Hero Banner */
+.s_hospital_hero {
+  position: relative;
+  background-color: #073B52;
+  overflow: hidden;
+  padding: 95px 0 115px 0;
+  display: flex;
+  align-items: center;
+}
+
+.s_hospital_hero .hero-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  filter: brightness(0.36);
+}
+
+.s_hospital_hero .hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(7, 45, 63, 0.94) 0%, rgba(11, 79, 108, 0.82) 55%, rgba(0, 168, 150, 0.35) 100%);
+}
+
+.s_hospital_hero .hero-content {
+  position: relative;
+  z-index: 2;
+  color: #FFFFFF;
+}
+
+.hero-headline {
+  font-size: 3.2rem;
+  line-height: 1.15;
+  letter-spacing: -1.5px;
+  word-break: normal;
+  overflow-wrap: break-word;
+}
+
+.hero-subtext {
+  font-size: 1.12rem;
+}
+
+.hero-quick-card {
+  background: rgba(7, 45, 63, 0.85);
+  border: 1px solid rgba(0, 168, 150, 0.45);
+  backdrop-filter: blur(14px);
+  border-radius: 16px;
+  padding: 26px;
+  box-shadow: 0 20px 45px rgba(0,0,0,0.35);
+}
+
+/* 2. Floating Doctor Appointment Bar */
+.s_appointment_bar {
+  margin-top: -50px;
+  position: relative;
+  z-index: 10;
+}
+
+.appointment-panel {
+  background: #FFFFFF;
+  border-radius: 16px;
+  box-shadow: 0 20px 50px rgba(11, 79, 108, 0.15);
+  border: 1px solid rgba(0, 168, 150, 0.25);
+  padding: 28px 32px;
+}
+
+.appointment-panel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid #EDF2F7;
+}
+
+.appointment-panel label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #475569;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 6px;
+  display: block;
+}
+
+.appointment-panel .form-control,
+.appointment-panel .form-select {
+  border: 1px solid #CBD5E1;
+  background-color: #F8FAFC;
+  padding: 10px 14px;
+  font-size: 0.9rem;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+  min-height: 44px;
+}
+
+.appointment-panel .form-control:focus,
+.appointment-panel .form-select:focus {
+  border-color: var(--med-cyan);
+  background-color: #FFFFFF;
+  box-shadow: 0 0 0 3px rgba(0, 168, 150, 0.2);
+  outline: none;
+}
+
+/* 3. Doctor Cards */
+.doctor-card {
+  background: #FFFFFF;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid #E2E8F0;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.04);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.doctor-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 45px rgba(11, 79, 108, 0.14);
+  border-color: var(--med-cyan);
+}
+
+.doctor-card .doctor-img-wrap {
+  position: relative;
+  overflow: hidden;
+  height: 290px;
+  background-color: var(--med-ice);
+}
+
+.doctor-card .doctor-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.doctor-card:hover .doctor-img-wrap img {
+  transform: scale(1.05);
+}
+
+/* 4. Department Cards */
+.dept-card {
+  background: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  border-radius: 14px;
+  padding: 32px 26px;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.dept-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #00A896 0%, #0B4F6C 100%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.dept-card:hover {
+  border-color: var(--med-cyan);
+  box-shadow: 0 16px 36px rgba(11, 79, 108, 0.12);
+  transform: translateY(-6px);
+}
+
+.dept-card:hover::before {
+  opacity: 1;
+}
+
+.dept-icon {
+  width: 62px;
+  height: 62px;
+  border-radius: 14px;
+  font-size: 1.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+
+.dept-icon.red { background: rgba(230, 57, 70, 0.12); color: #E63946; }
+.dept-icon.blue { background: rgba(11, 79, 108, 0.12); color: #0B4F6C; }
+.dept-icon.teal { background: rgba(0, 168, 150, 0.12); color: #00A896; }
+.dept-icon.amber { background: rgba(245, 158, 11, 0.12); color: #D97706; }
+.dept-icon.purple { background: rgba(139, 92, 246, 0.12); color: #7C3AED; }
+.dept-icon.green { background: rgba(16, 185, 129, 0.12); color: #059669; }
+
+.dept-card:hover .dept-icon {
+  transform: scale(1.08);
+}
+
+/* 5. Health Checkup Package Cards */
+.package-card {
+  background: #FFFFFF;
+  border-radius: 14px;
+  border: 1px solid #E2E8F0;
+  padding: 34px 26px;
+  transition: all 0.3s ease;
+  height: 100%;
+  position: relative;
+}
+
+.package-card.featured {
+  border: 2px solid var(--med-cyan);
+  box-shadow: 0 15px 35px rgba(0, 168, 150, 0.15);
+  transform: scale(1.02);
+}
+
+.package-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(11, 79, 108, 0.12);
+}
+
+.package-price {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: var(--med-navy);
+  letter-spacing: -0.02em;
+}
+
+/* 6. Patient Testimonials */
+.med-testimonial-card {
+  background: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  border-radius: 14px;
+  padding: 30px 24px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+  transition: all 0.3s ease;
+}
+
+.med-testimonial-card:hover {
+  box-shadow: 0 15px 35px rgba(11, 79, 108, 0.1);
+  border-color: var(--med-cyan);
+  transform: translateY(-4px);
+}
+
+/* 7. Clinical Footer */
+footer.med-footer {
+  background-color: var(--med-navy-dark);
+  color: #CBD5E1;
+  font-size: 0.92rem;
+}
+
+footer.med-footer a {
+  color: #CBD5E1;
+  transition: color 0.2s ease;
+}
+
+footer.med-footer a:hover {
+  color: var(--med-cyan);
+}
+
+/* Responsive Viewport Rules */
+@media (max-width: 991px) {
+  .s_hospital_hero {
+    padding: 60px 0 80px 0;
+  }
+  .hero-headline {
+    font-size: 2.4rem !important;
+    line-height: 1.2 !important;
+  }
+  .s_appointment_bar {
+    margin-top: -30px;
+  }
+  .appointment-panel {
+    padding: 22px;
+  }
+  .hero-quick-card {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .s_hospital_hero {
+    padding: 40px 0 60px 0;
+    text-align: center;
+  }
+  .hero-headline {
+    font-size: 1.85rem !important;
+    line-height: 1.25 !important;
+    letter-spacing: -0.5px !important;
+  }
+  .hero-subtext {
+    font-size: 0.95rem !important;
+  }
+  .hero-cta-buttons {
+    justify-content: center;
+  }
+  .hero-metrics {
+    margin: 0 auto;
+  }
+  .s_appointment_bar {
+    margin-top: -20px;
+    padding: 0 10px;
+  }
+  .appointment-panel {
+    padding: 18px 14px;
+    border-radius: 12px;
+  }
+  .appointment-panel-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+  .appointment-panel .row.g-3 > div {
+    width: 100%;
+  }
+  .dept-card {
+    padding: 24px 20px;
+  }
+  .package-card {
+    padding: 24px 20px;
+  }
+  .package-card.featured {
+    transform: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .s_hospital_hero {
+    padding: 30px 0 50px 0;
+  }
+  .hero-headline {
+    font-size: 1.55rem !important;
+    line-height: 1.25 !important;
+    letter-spacing: -0.5px !important;
+  }
+  .hero-subtext {
+    font-size: 0.88rem !important;
+  }
+  .med-hero-badge {
+    font-size: 0.65rem !important;
+    padding: 4px 10px !important;
+    letter-spacing: 0.5px !important;
+    white-space: normal !important;
+  }
+  .btn-med-cyan, .btn-med-alert, .btn-med-navy, .btn-med-outline {
+    width: 100%;
+    text-align: center;
+    padding: 12px 18px;
+    font-size: 0.82rem;
+  }
+  .s_emergency_callout .btn {
+    width: 100%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}

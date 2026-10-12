@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<template id="s_hospital_location" name="Hospital Location &amp; Campus Access">
+    <section class="s_hospital_location py-5" style="background-color: #F4F9F9;" data-snippet="s_hospital_location" data-name="Hospital Location">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <span class="med-badge-navy mb-2">Campus Navigation</span>
+                <h2 class="display-5 fw-bold mb-3" style="color: #0B4F6C;">Hospital Location &amp; Emergency Access</h2>
+                <div class="med-divider"></div>
+            </div>
+            <div class="row g-4 align-items-center">
+                <div class="col-lg-6">
+                    <div class="p-4 p-md-5 rounded-3 bg-white border shadow-sm">
+                        <h3 class="h4 fw-bold mb-4" style="color: #0B4F6C;">Main Medical Center Campus</h3>
+                        <div class="d-flex mb-3">
+                            <div class="me-3 fs-4 text-primary"><i class="fa fa-map-marker"></i></div>
+                            <div>
+                                <h4 class="h6 fw-bold mb-1">Campus Address</h4>
+                                <p class="text-muted small mb-0">Healthcare Boulevard, Medical District, Central Wing No. 1</p>
+                            </div>
+                        </div>
+                        <div class="d-flex mb-3">
+                            <div class="me-3 fs-4 text-danger"><i class="fa fa-ambulance"></i></div>
+                            <div>
+                                <h4 class="h6 fw-bold mb-1">Emergency Trauma Gate</h4>
+                                <p class="text-muted small mb-0">Direct 24/7 Ambulance Bay Entry via East Gate (Ramp Access)</p>
+                            </div>
+                        </div>
+                        <div class="d-flex mb-3">
+                            <div class="me-3 fs-4 text-success"><i class="fa fa-phone"></i></div>
+                            <div>
+                                <h4 class="h6 fw-bold mb-1">24/7 Medical Care Line</h4>
+                                <p class="text-muted small mb-0">+1 (800) 911-CARE • emergency@hospitalcare.org</p>
+                            </div>
+                        </div>
+                        <div class="pt-2">
+                            <a href="/contactus" class="btn btn-med-cyan">Get Driving Directions &amp; Parking Guide</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="rounded-3 overflow-hidden border shadow-sm">
+                        <img src="/website_hospitality_luxe/static/src/img/content/facility_entrance.jpg" alt="Hospital Main Campus Entrance" class="w-100 h-100" style="min-height: 360px; object-fit: cover;"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</template>
+</odoo>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Website Builder Snippet Registration -->
+    <template id="hospitality_snippets" inherit_id="website.snippets" name="Hospital Care Snippets">
+        <!-- Add Snippet Group -->
+        <xpath expr="//t[@id='installed_snippets_hook']" position="before">
+            <t snippet-group="hospital" t-snippet="website.s_snippet_group" string="Hospital Care"
+               t-thumbnail="/website_hospitality_luxe/static/src/img/wbuilder/hospital_group.svg"/>
+        </xpath>
+
+        <!-- Register all 15 Snippets under snippet_structure -->
+        <xpath expr="//snippets[@id='snippet_structure']" position="inside">
+            <t t-snippet="website_hospitality_luxe.s_hospital_hero" string="Hospital Hero Banner" group="hospital"
+               t-thumbnail="/website_hospitality_luxe/static/src/img/wbuilder/s_hospital_hero.svg">
+                <keywords>hospital, hero, emergency, medical, care, doctors, healthcare</keywords>
+            </t>
+            <t t-snippet="website_hospitality_luxe.s_appointment_bar" string="Quick Doctor Appointment Bar" group="hospital"
+               t-thumbnail="/website_hospitality_luxe/static/src/img/wbuilder/s_appointment_bar.svg">
+                <keywords>appointment, doctor, book, visit, date, patient, hospital, schedule</keywords>
+            </t>
+            <t t-snippet="website_hospitality_luxe.s_emergency_callout" string="Emergency &amp; Trauma Callout" group="hospital"
+               t-thumbnail="/website_hospitality_luxe/static/src/img/wbuilder/s_emergency_callout.svg">
+                <keywords>emergency, trauma, ambulance, 24/7, hotline, urgent, care</keywords>
+            </t>
+            <t t-snippet="website_hospitality_luxe.s_departments_grid" string="Medical Departments Grid" group="hospital"
+               t-thumbnail="/website_hospitality_luxe/static/src/img/wbuilder/s_departments_grid.svg">
+                <keywords>departments, cardiology, neurology, orthopedics, pediatrics, specialties</keywords>
+            </t>
+            <t t-snippet="website_hospitality_luxe.s_featured_doctors" string="Senior Doctors &amp; Specialists" group="hospital"
+               t-thumbnail="/website_hospitality_luxe/static/src/img/wbuilder/s_featured_doctors.svg">
+                <keywords>doctors, specialists, physicians, surgeons, faculty, medical, opd</keywords>
+            </t>
+            <t t-snippet="website_hospitality_luxe.s_hospital_stats" string="Hospital Milestones &amp; Stats" group="hospital"
+               t-thumbnail="/website_hospitality_luxe/static/src/img/wbuilder/s_hospital_stats.svg">
+                <keywords>stats, beds, surgeries, doctors, recovery, milestones, counters</keywords>
+            </t>
+            <t t-snippet="website_hospitality_luxe.s_services_facilities" string="Hospital Facilities &amp; Tech" group="hospital"
+               t-thumbnail="/website_hospitality_luxe/static/src/img/wbuilder/s_services_facilities.svg">
+                <keywords>facilities, surgery, robotic, icu, mri, laboratory, hospital, technology</keywords>
+            </t>
+            <t t-snippet="website_hospitality_luxe.s_health_packages" string="Preventive Health Packages" group="hospital"
+               t-thumbnail="/website_hospitality_luxe/static/src/img/wbuilder/s_health_packages.svg">
+                <keywords>health packages, checkup, screening, tests, master, preventive, blood</keywords>
+            </t>
+            <t t-snippet="website_hospitality_luxe.s_patient_testimonials" string="Patient Recovery Reviews" group="hospital"
+               t-thumbnail="/website_hospitality_luxe/static/src/img/wbuilder/s_patient_testimonials.svg">
+                <keywords>testimonials, patient, reviews, stories, recovery, feedback, ratings</keywords>
+            </t>
+            <t t-snippet="website_hospitality_luxe.s_accreditation_badges" string="Hospital Accreditations" group="hospital"
+               t-thumbnail="/website_hospitality_luxe/static/src/img/wbuilder/s_accreditation_badges.svg">
+                <keywords>accreditation, jci, nabh, nabl, iso, quality, certificates, safety</keywords>
+            </t>
+            <t t-snippet="website_hospitality_luxe.s_virtual_tour" string="Medical Facilities Tour" group="hospital"
+               t-thumbnail="/website_hospitality_luxe/static/src/img/wbuilder/s_virtual_tour.svg">
+                <keywords>virtual tour, campus, rooms, operation theatre, hospital, gallery</keywords>
+            </t>
+            <t t-snippet="website_hospitality_luxe.s_insurance_partners" string="Cashless Insurance Partners" group="hospital"
+               t-thumbnail="/website_hospitality_luxe/static/src/img/wbuilder/s_insurance_partners.svg">
+                <keywords>insurance, cashless, tpa, mediclaim, policy, claims, admission</keywords>
+            </t>
+            <t t-snippet="website_hospitality_luxe.s_patient_faq" string="Patient &amp; Visitor FAQ" group="hospital"
+               t-thumbnail="/website_hospitality_luxe/static/src/img/wbuilder/s_patient_faq.svg">
+                <keywords>faq, patient guide, visiting hours, admission, hospital, questions</keywords>
+            </t>
+            <t t-snippet="website_hospitality_luxe.s_hospital_location" string="Hospital Location &amp; Access" group="hospital"
+               t-thumbnail="/website_hospitality_luxe/static/src/img/wbuilder/s_hospital_location.svg">
+                <keywords>location, address, emergency gate, directions, map, campus, parking</keywords>
+            </t>
+            <t t-snippet="website_hospitality_luxe.s_appointment_cta" string="Closing Appointment CTA" group="hospital"
+               t-thumbnail="/website_hospitality_luxe/static/src/img/wbuilder/s_appointment_cta.svg">
+                <keywords>cta, appointment, call to action, book, consultation, hospital</keywords>
+            </t>
+        </xpath>
+    </template>
+
+</odoo>

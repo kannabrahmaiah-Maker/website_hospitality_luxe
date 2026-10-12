@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="luxe_contactus" inherit_id="website.contactus" name="Hospital Care Contact &amp; Emergency" priority="20">
+        <xpath expr="//div[@id='wrap']" position="replace">
+            <div id="wrap" class="oe_structure oe_empty">
+                <!-- Hero Header -->
+                <section class="hospital-contact-hero text-white text-center" style="background: linear-gradient(135deg, #073B52 0%, #0B4F6C 60%, #00A896 100%); padding: 75px 0 65px 0;">
+                    <div class="container">
+                        <div class="med-hero-badge mb-3">
+                            <span class="pulse-indicator"></span>
+                            <span>24/7 PATIENT SUPPORT &amp; EMERGENCY DESK</span>
+                        </div>
+                        <h1 class="display-4 fw-bold text-white mb-3">Contact Hospital Care &amp; Emergency</h1>
+                        <p class="lead text-light text-opacity-75 mx-auto" style="max-width: 720px; font-size: 1.15rem; line-height: 1.7;">
+                            Connect with our clinical consultation coordinators, inpatient admissions team, 
+                            cashless insurance TPA desk, or immediate 24/7 ambulance dispatch.
+                        </p>
+                    </div>
+                </section>
+
+                <!-- Main Form & Clinical Contact Section -->
+                <section class="py-5 bg-light hospital-contact-section">
+                    <div class="container py-3">
+                        <div class="row g-4 g-lg-5">
+                            <!-- Left: Consultation & Inquiry Form -->
+                            <div class="col-lg-7">
+                                <div class="hospital-contact-card bg-white p-4 p-md-5 rounded-4 shadow-sm border">
+                                    <div class="d-flex align-items-center gap-3 mb-4 pb-3 border-bottom">
+                                        <div class="rounded-circle d-flex align-items-center justify-content-center" style="width: 48px; height: 48px; background: rgba(0, 168, 150, 0.12); color: #00A896; font-size: 1.3rem;">
+                                            <i class="fa fa-stethoscope"></i>
+                                        </div>
+                                        <div>
+                                            <h3 class="h4 fw-bold mb-1" style="color: #0B4F6C;">Patient Consultation &amp; Inquiry</h3>
+                                            <p class="text-muted small mb-0">Fill in your requirements below for priority response within 15 minutes.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="appointment-feedback mb-3"></div>
+
+                                    <form id="hospital_contact_form" action="/hospital/contact/submit" method="post">
+                                        <div class="row g-3">
+                                            <div class="col-md-6">
+                                                <label class="form-label fw-semibold text-secondary small mb-1"><i class="fa fa-user text-info me-1"></i> Patient Full Name <span class="text-danger">*</span></label>
+                                                <input type="text" name="patient_name" class="form-control" placeholder="e.g. Robert Smith" required="required" style="min-height: 46px; border-radius: 8px;"/>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label class="form-label fw-semibold text-secondary small mb-1"><i class="fa fa-phone text-info me-1"></i> Phone / Mobile Number <span class="text-danger">*</span></label>
+                                                <input type="tel" name="patient_phone" class="form-control" placeholder="+1 (555) 000-0000" required="required" style="min-height: 46px; border-radius: 8px;"/>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label class="form-label fw-semibold text-secondary small mb-1"><i class="fa fa-envelope text-info me-1"></i> Email Address <span class="text-danger">*</span></label>
+                                                <input type="email" name="patient_email" class="form-control" placeholder="patient@example.com" required="required" style="min-height: 46px; border-radius: 8px;"/>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label class="form-label fw-semibold text-secondary small mb-1"><i class="fa fa-hospital-o text-info me-1"></i> Medical Department</label>
+                                                <select name="department" class="form-select" style="min-height: 46px; border-radius: 8px;">
+                                                    <option value="General Medicine" selected="selected">General Medicine &amp; Health</option>
+                                                    <option value="Cardiology">Cardiology &amp; Cardiac Care</option>
+                                                    <option value="Orthopedics">Orthopedics &amp; Joint Surgery</option>
+                                                    <option value="Neurology">Neurology &amp; Neurosurgery</option>
+                                                    <option value="Pediatrics">Pediatrics &amp; Child Health</option>
+                                                    <option value="Oncology">Oncology &amp; Cancer Care</option>
+                                                    <option value="Emergency &amp; Trauma">Emergency &amp; Trauma Care</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label class="form-label fw-semibold text-secondary small mb-1"><i class="fa fa-tag text-info me-1"></i> Nature of Inquiry</label>
+                                                <select name="inquiry_type" class="form-select" style="min-height: 46px; border-radius: 8px;">
+                                                    <option value="Doctor Appointment" selected="selected">Book Doctor Appointment</option>
+                                                    <option value="Inpatient Admission">Inpatient Admission Enquiry</option>
+                                                    <option value="Cashless Insurance">Cashless Insurance &amp; TPA Claim</option>
+                                                    <option value="Lab &amp; Diagnostics">Laboratory &amp; Diagnostics Inquiry</option>
+                                                    <option value="Second Medical Opinion">Second Medical Opinion</option>
+                                                    <option value="General Information">General Hospital Information</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label class="form-label fw-semibold text-secondary small mb-1"><i class="fa fa-calendar text-info me-1"></i> Preferred Consultation Date</label>
+                                                <input type="date" name="appointment_date" class="form-control" style="min-height: 46px; border-radius: 8px;"/>
+                                            </div>
+                                            <div class="col-12">
+                                                <label class="form-label fw-semibold text-secondary small mb-1"><i class="fa fa-pencil text-info me-1"></i> Symptoms / Patient Notes <span class="text-danger">*</span></label>
+                                                <textarea name="message" class="form-control" rows="4" placeholder="Briefly describe patient symptoms, medical requirements, or queries..." required="required" style="border-radius: 8px;"></textarea>
+                                            </div>
+                                            <div class="col-12 mt-4">
+                                                <button type="submit" class="btn btn-med-cyan w-100 py-3 fw-bold text-uppercase shadow-sm" style="font-size: 0.95rem; letter-spacing: 0.5px;">
+                                                    <i class="fa fa-paper-plane me-2"></i> Submit Patient Inquiry
+                                                </button>
+                                                <div class="text-center mt-2 text-muted" style="font-size: 0.78rem;">
+                                                    <i class="fa fa-lock text-success me-1"></i> Your personal health information is kept strictly confidential under HIPAA standards.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <!-- Right: Emergency Dispatch & Hospital Desks -->
+                            <div class="col-lg-5">
+                                <!-- 24/7 Emergency Box -->
+                                <div class="p-4 rounded-4 mb-4 text-white shadow-sm" style="background: linear-gradient(135deg, #E63946 0%, #C92A37 100%);">
+                                    <div class="d-flex align-items-center gap-2 mb-2">
+                                        <span class="badge bg-white text-danger px-2 py-1 fw-bold">CRITICAL CARE</span>
+                                        <span class="small text-white-50">24/7 Immediate Dispatch</span>
+                                    </div>
+                                    <h4 class="h5 fw-bold mb-2">Emergency &amp; Ambulance Hotline</h4>
+                                    <p class="small text-white-75 mb-3" style="color: rgba(255,255,255,0.85);">For cardiac arrest, stroke, severe trauma, or ambulance requests, call immediately:</p>
+                                    <a href="tel:18009112273" class="btn btn-light w-100 fw-bold py-2 text-danger shadow-sm mb-2" style="font-size: 1.1rem;">
+                                        <i class="fa fa-ambulance me-2"></i> 1-800-911-CARE
+                                    </a>
+                                    <div class="d-flex justify-content-between small text-white-75 pt-2 border-top border-white border-opacity-25" style="font-size: 0.8rem;">
+                                        <span>Trauma Bay: Gate 3</span>
+                                        <span>Avg Dispatch: 8 Mins</span>
+                                    </div>
+                                </div>
+
+                                <!-- Hospital Desks Directory -->
+                                <div class="bg-white p-4 rounded-4 shadow-sm border mb-4">
+                                    <h5 class="fw-bold mb-3 pb-2 border-bottom" style="color: #0B4F6C;">
+                                        <i class="fa fa-building-o text-info me-2"></i> Hospital Key Desks
+                                    </h5>
+                                    <div class="d-flex flex-column gap-3">
+                                        <div class="d-flex gap-3 align-items-start">
+                                            <div class="rounded-circle p-2 bg-light text-primary mt-1" style="width: 36px; height: 36px; display: flex; align-items: center; justify-content: center;">
+                                                <i class="fa fa-user-md"></i>
+                                            </div>
+                                            <div>
+                                                <div class="fw-bold small">Outpatient (OPD) Desk</div>
+                                                <div class="text-muted small">+1 (555) 555-0101 • opd@hospitalcare.org</div>
+                                                <div class="text-muted" style="font-size: 0.76rem;">Mon – Sat: 8:00 AM – 8:00 PM</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="d-flex gap-3 align-items-start">
+                                            <div class="rounded-circle p-2 bg-light text-success mt-1" style="width: 36px; height: 36px; display: flex; align-items: center; justify-content: center;">
+                                                <i class="fa fa-shield"></i>
+                                            </div>
+                                            <div>
+                                                <div class="fw-bold small">Cashless Insurance &amp; TPA Desk</div>
+                                                <div class="text-muted small">+1 (555) 555-0104 • tpa@hospitalcare.org</div>
+                                                <div class="text-muted" style="font-size: 0.76rem;">24 Hours Active (Admissions Block, Ground Fl)</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="d-flex gap-3 align-items-start">
+                                            <div class="rounded-circle p-2 bg-light text-info mt-1" style="width: 36px; height: 36px; display: flex; align-items: center; justify-content: center;">
+                                                <i class="fa fa-flask"></i>
+                                            </div>
+                                            <div>
+                                                <div class="fw-bold small">Diagnostics &amp; Lab Reports</div>
+                                                <div class="text-muted small">+1 (555) 555-0106 • lab@hospitalcare.org</div>
+                                                <div class="text-muted" style="font-size: 0.76rem;">24/7 Sample Collection &amp; Online Reports</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Visiting Hours Card -->
+                                <div class="bg-white p-4 rounded-4 shadow-sm border">
+                                    <h5 class="fw-bold mb-3 pb-2 border-bottom" style="color: #0B4F6C;">
+                                        <i class="fa fa-clock-o text-info me-2"></i> Patient Visiting Hours
+                                    </h5>
+                                    <ul class="list-unstyled mb-0 small">
+                                        <li class="d-flex justify-content-between py-1 border-bottom">
+                                            <span class="text-muted">General &amp; Private Wards</span>
+                                            <strong class="text-dark">11 AM – 1 PM &amp; 5 PM – 7 PM</strong>
+                                        </li>
+                                        <li class="d-flex justify-content-between py-1 border-bottom">
+                                            <span class="text-muted">ICU &amp; Critical Care</span>
+                                            <strong class="text-dark">4 PM – 5 PM (1 Attendant)</strong>
+                                        </li>
+                                        <li class="d-flex justify-content-between py-1 pt-2">
+                                            <span class="text-muted">Emergency &amp; Trauma Bay</span>
+                                            <strong class="text-danger">24/7 Immediate Access</strong>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Bottom Clinical Callout & Map -->
+                <t t-call="website_hospitality_luxe.s_emergency_callout"/>
+                <t t-call="website_hospitality_luxe.s_hospital_location"/>
+            </div>
+        </xpath>
+    </template>
+</odoo>

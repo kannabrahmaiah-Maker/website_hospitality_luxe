@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<template id="s_services_facilities" name="Hospital Facilities &amp; Technology">
+    <section class="s_services_facilities py-5" style="background-color: #FFFFFF;" data-snippet="s_services_facilities" data-name="Hospital Facilities">
+        <div class="container py-4">
+            <div class="row align-items-center g-5 mb-5">
+                <div class="col-lg-6">
+                    <div class="position-relative rounded-4 overflow-hidden shadow-lg border">
+                        <img src="/website_hospitality_luxe/static/src/img/content/advanced_surgery.jpg" alt="Robotic Surgery Operating Theatre" class="w-100 h-100" style="min-height: 380px; object-fit: cover;"/>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <span class="med-badge-cyan mb-2">Next-Generation Infrastructure</span>
+                    <h2 class="display-5 fw-bold mb-3" style="color: #0B4F6C;">Precision Surgery &amp; Advanced Critical Care</h2>
+                    <div class="med-divider-left"></div>
+                    <p class="lead text-muted mb-4">
+                        Equipped with high-tech Da Vinci surgical systems, modular laminar airflow operating theaters, and dedicated specialty ICUs.
+                    </p>
+                    <div class="mb-4 d-flex flex-column gap-3">
+                        <div class="d-flex align-items-start">
+                            <i class="fa fa-check-circle fs-5 me-3" style="color: #00A896;"></i>
+                            <div>
+                                <h4 class="h6 fw-bold mb-1">Da Vinci Robotic Surgery</h4>
+                                <p class="small text-muted mb-0">Minimally invasive procedures with sub-millimeter precision, minimal blood loss, and faster discharge.</p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-start">
+                            <i class="fa fa-check-circle fs-5 me-3" style="color: #00A896;"></i>
+                            <div>
+                                <h4 class="h6 fw-bold mb-1">Class 100 Modular Laminar Operating Theaters</h4>
+                                <p class="small text-muted mb-0">Ultra-sterile surgical environment ensuring near-zero surgical site infection rates.</p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-start">
+                            <i class="fa fa-check-circle fs-5 me-3" style="color: #00A896;"></i>
+                            <div>
+                                <h4 class="h6 fw-bold mb-1">Dedicated Multi-Organ ICU</h4>
+                                <p class="small text-muted mb-0">1:1 nurse-to-patient critical care ratio supported by 24/7 intensivist supervision.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="/facilities" class="btn btn-med-navy">Explore All Medical Facilities</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</template>
+</odoo>

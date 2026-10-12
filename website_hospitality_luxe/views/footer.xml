@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="luxe_footer_custom" inherit_id="website.footer_custom" name="Hospital Care Clinical Footer" active="True">
+        <xpath expr="//div[@id='footer']" position="replace">
+            <div id="footer" class="oe_structure oe_structure_solo text-break med-footer" t-ignore="true" t-if="not no_footer" style="background-color: #073B52; color: #E2E8F0; border-top: 4px solid #00A896;">
+                <section class="s_text_block pt-5 pb-4" data-snippet="s_text_block" data-name="Hospital Care Footer">
+                    <div class="container">
+                        <div class="row g-4 mb-5">
+                            <!-- Hospital Branding & Emergency Contact -->
+                            <div class="col-lg-4">
+                                <div class="d-flex align-items-center mb-3">
+                                    <div class="rounded-circle d-flex align-items-center justify-content-center me-3 shadow-sm" style="width: 46px; height: 46px; background: #00A896; color: #FFFFFF; font-weight: 800; font-size: 1.3rem;">
+                                        <i class="fa fa-plus"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="h5 fw-bold mb-0 text-white" style="letter-spacing: 0.5px;">MEDICARE HOSPITAL</h4>
+                                        <small class="text-info fw-semibold" style="letter-spacing: 1px; font-size: 0.72rem; text-transform: uppercase;">&amp; Research Institute</small>
+                                    </div>
+                                </div>
+                                <p class="small text-light-50 mb-3" style="line-height: 1.8; color: #CBD5E1;">
+                                    JCI &amp; NABH Accredited Multi-Super-Specialty Tertiary Care Center. Delivering compassionate patient healing, robotic precision, and evidence-based clinical excellence.
+                                </p>
+                                <div class="p-3 rounded-3 mb-3" style="background: rgba(230, 57, 70, 0.15); border: 1px solid rgba(230, 57, 70, 0.4);">
+                                    <div class="d-flex align-items-center gap-2 text-danger fw-bold small text-uppercase mb-1">
+                                        <i class="fa fa-ambulance"></i> 24/7 Emergency &amp; Trauma Unit
+                                    </div>
+                                    <div class="h5 fw-bold mb-0 text-white">
+                                        <a href="tel:+18009112273" class="text-white text-decoration-none">+1 (800) 911-CARE</a>
+                                    </div>
+                                </div>
+                                <div class="small text-muted mb-2 text-light" style="color: #94A3B8 !important;">
+                                    <i class="fa fa-map-marker me-2 text-info"></i> 742 Healthcare Boulevard, Medical District, NY 10021
+                                </div>
+                                <div class="small text-muted mb-2 text-light" style="color: #94A3B8 !important;">
+                                    <i class="fa fa-phone me-2 text-info"></i> OPD Appointments: +1 (800) 555-MEDS
+                                </div>
+                                <div class="small text-muted text-light" style="color: #94A3B8 !important;">
+                                    <i class="fa fa-envelope me-2 text-info"></i> appointments@medicarehospital.org
+                                </div>
+                            </div>
+
+                            <!-- Clinical Departments -->
+                            <div class="col-sm-6 col-lg-2 offset-lg-1">
+                                <h5 class="text-white fw-bold mb-3" style="font-size: 1.05rem; border-bottom: 2px solid #00A896; display: inline-block; padding-bottom: 4px;">Specialties</h5>
+                                <ul class="list-unstyled small mb-0 d-flex flex-column gap-2">
+                                    <li><a href="/departments" class="text-decoration-none text-light-50 hover-cyan" style="color: #CBD5E1;">Cardiology &amp; Cath Lab</a></li>
+                                    <li><a href="/departments" class="text-decoration-none text-light-50 hover-cyan" style="color: #CBD5E1;">Neuro &amp; Spine Surgery</a></li>
+                                    <li><a href="/departments" class="text-decoration-none text-light-50 hover-cyan" style="color: #CBD5E1;">Orthopedics &amp; Joints</a></li>
+                                    <li><a href="/departments" class="text-decoration-none text-light-50 hover-cyan" style="color: #CBD5E1;">Pediatrics &amp; NICU</a></li>
+                                    <li><a href="/departments" class="text-decoration-none text-light-50 hover-cyan" style="color: #CBD5E1;">Medical &amp; Surg Oncology</a></li>
+                                    <li><a href="/departments" class="text-decoration-none text-light-50 hover-cyan" style="color: #CBD5E1;">24/7 Trauma &amp; Critical Care</a></li>
+                                </ul>
+                            </div>
+
+                            <!-- Patient Resources -->
+                            <div class="col-sm-6 col-lg-2">
+                                <h5 class="text-white fw-bold mb-3" style="font-size: 1.05rem; border-bottom: 2px solid #00A896; display: inline-block; padding-bottom: 4px;">Patient Care</h5>
+                                <ul class="list-unstyled small mb-0 d-flex flex-column gap-2">
+                                    <li><a href="/#appointment_bar" class="text-decoration-none text-light-50 hover-cyan" style="color: #CBD5E1;">Book Doctor Appointment</a></li>
+                                    <li><a href="/doctors" class="text-decoration-none text-light-50 hover-cyan" style="color: #CBD5E1;">Specialist Directory</a></li>
+                                    <li><a href="/patient-guide" class="text-decoration-none text-light-50 hover-cyan" style="color: #CBD5E1;">Patient Admission Guide</a></li>
+                                    <li><a href="/patient-guide" class="text-decoration-none text-light-50 hover-cyan" style="color: #CBD5E1;">Insurance &amp; Cashless TPA</a></li>
+                                    <li><a href="/facilities" class="text-decoration-none text-light-50 hover-cyan" style="color: #CBD5E1;">ICU &amp; Robotic Suites</a></li>
+                                    <li><a href="/gallery" class="text-decoration-none text-light-50 hover-cyan" style="color: #CBD5E1;">Hospital Photo Tour</a></li>
+                                </ul>
+                            </div>
+
+                            <!-- Health Updates & Accreditations -->
+                            <div class="col-lg-3">
+                                <h5 class="text-white fw-bold mb-3" style="font-size: 1.05rem; border-bottom: 2px solid #00A896; display: inline-block; padding-bottom: 4px;">Clinical Accreditations</h5>
+                                <p class="small text-light-50 mb-3" style="line-height: 1.6; color: #CBD5E1;">
+                                    Certified by global healthcare quality standards ensuring patient safety, clinical protocols, and low infection rates.
+                                </p>
+                                <div class="d-flex flex-wrap gap-2 mb-4">
+                                    <span class="badge bg-dark text-info border border-info px-2 py-1" style="font-size: 0.75rem;"><i class="fa fa-certificate me-1"></i> JCI Certified</span>
+                                    <span class="badge bg-dark text-info border border-info px-2 py-1" style="font-size: 0.75rem;"><i class="fa fa-shield me-1"></i> NABH Accredited</span>
+                                    <span class="badge bg-dark text-info border border-info px-2 py-1" style="font-size: 0.75rem;"><i class="fa fa-flask me-1"></i> NABL Labs</span>
+                                    <span class="badge bg-dark text-info border border-info px-2 py-1" style="font-size: 0.75rem;"><i class="fa fa-check me-1"></i> ISO 9001:2015</span>
+                                </div>
+                                <div class="d-flex gap-3 fs-5" style="color: #00A896;">
+                                    <a href="#" class="text-decoration-none" style="color: #00A896;"><i class="fa fa-hospital-o"></i></a>
+                                    <a href="#" class="text-decoration-none" style="color: #00A896;"><i class="fa fa-facebook"></i></a>
+                                    <a href="#" class="text-decoration-none" style="color: #00A896;"><i class="fa fa-linkedin"></i></a>
+                                    <a href="#" class="text-decoration-none" style="color: #00A896;"><i class="fa fa-youtube-play"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="border-top pt-4 d-flex flex-column flex-md-row justify-content-between align-items-center small text-light" style="border-color: rgba(255,255,255,0.12) !important; color: #94A3B8;">
+                            <div>© 2026 MediCare Hospital &amp; Research Institute. All Rights Reserved. NABH &amp; JCI Accredited.</div>
+                            <div class="mt-2 mt-md-0 d-flex gap-3">
+                                <a href="/patient-guide" class="text-decoration-none text-light" style="color: #94A3B8;">Patient Rights Charter</a>
+                                <span>•</span>
+                                <a href="#" class="text-decoration-none text-light" style="color: #94A3B8;">Clinical Ethics</a>
+                                <span>•</span>
+                                <a href="/contactus" class="text-decoration-none text-light" style="color: #94A3B8;">Emergency Help Desk</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </xpath>
+    </template>
+</odoo>
